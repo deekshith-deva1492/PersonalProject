@@ -14,6 +14,7 @@ from src.strategies.intraday_strategy import IntradayStrategy
 from src.risk.risk_manager import RiskManager
 from src.utils.logger import get_logger
 from src.utils.config import config
+from src.utils.market_hours import check_market_hours, get_market_status_detailed
 
 logger = get_logger('main', config.get('logging'))
 
@@ -282,6 +283,23 @@ def main():
     )
     
     args = parser.parse_args()
+    
+    # Check market hours before starting
+    is_market_open, market_message = check_market_hours()
+    logger.info("=" * 60)
+    logger.info(market_message)
+    
+    if not is_market_open:
+        market_status = get_market_status_detailed()
+        logger.warning(f"Market Status: {market_status['current_day']} {market_status['current_time']}")
+        logger.warning(f"Next Event: {market_status['next_event']}")
+        logger.info(f"Market Hours: {market_status['market_hours']}")
+        logger.info("=" * 60)
+        logger.info("Trading bot will start but wait for market to open...")
+    else:
+        logger.info("Market is open - Starting trading operations...")
+    
+    logger.info("=" * 60)
     
     # Create and start bot
     bot = TradingBot(mode=args.mode)

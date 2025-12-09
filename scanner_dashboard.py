@@ -18,6 +18,7 @@ from src.risk.risk_manager import RiskManager
 from src.utils.config import config
 from src.utils.alerting import AlertManager
 from src.data.realtime_stream import RealtimeDataStream, StreamingScanner
+from src.utils.market_hours import check_market_hours, get_market_status_detailed
 
 # Load environment variables
 load_dotenv()
@@ -61,7 +62,7 @@ if 'scanner' not in st.session_state:
     st.session_state.last_scan_time = None
     st.session_state.signals = []
     st.session_state.previous_signal_count = 0
-    st.session_state.scan_mode = "HTTP Polling"  # Default mode
+    st.session_state.scan_mode = "WebSocket"  # DEFAULT: WebSocket for real-time streaming
     st.session_state.websocket_stream = None
     st.session_state.streaming_scanner = None
     st.session_state.websocket_connected = False
@@ -93,6 +94,16 @@ if 'executor' not in st.session_state:
 st.title("🔍 NIFTY 50 Multi-Symbol Scanner")
 st.markdown("Real-time scanning of all 50 NIFTY stocks for trading opportunities")
 
+# Market Hours Check - Display prominent warning if market is closed
+is_market_open, market_message = check_market_hours()
+if not is_market_open:
+    st.error(market_message)
+    market_status = get_market_status_detailed()
+    st.warning(f"📅 {market_status['current_day']} {market_status['current_time']} | {market_status['next_event']}")
+    st.info(f"ℹ️ Market Hours: {market_status['market_hours']}")
+else:
+    st.success(market_message)
+
 # Sidebar controls
 st.sidebar.header("Scanner Controls")
 
@@ -119,20 +130,21 @@ st.sidebar.markdown("---")
 st.sidebar.subheader("⚡ Scan Mode")
 scan_mode = st.sidebar.radio(
     "Select Mode:",
-    ["HTTP Polling (60s)", "WebSocket Streaming (<1s)"],
-    help="HTTP: Scans every 60 seconds | WebSocket: Real-time tick updates"
+    ["WebSocket Streaming (<1s)", "HTTP Polling (60s)"],  # WebSocket first (default)
+    help="WebSocket: Real-time tick updates (RECOMMENDED) | HTTP: Scans every 60 seconds (fallback)"
 )
 
 # Update scan mode in session state
-if scan_mode == "HTTP Polling (60s)":
+if scan_mode == "WebSocket Streaming (<1s)":
+    st.session_state.scan_mode = "WebSocket"
+else:
+    # HTTP Polling mode (fallback)
     st.session_state.scan_mode = "HTTP"
     # Stop WebSocket if running
     if st.session_state.websocket_stream:
         st.session_state.websocket_stream.stop()
         st.session_state.websocket_stream = None
         st.session_state.websocket_connected = False
-else:
-    st.session_state.scan_mode = "WebSocket"
 
 # Auto-scan toggle (for HTTP mode only)
 st.sidebar.markdown("---")

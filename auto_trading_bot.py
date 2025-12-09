@@ -14,6 +14,7 @@ from src.brokers.zerodha_broker import ZerodhaBroker
 from src.risk.risk_manager import RiskManager
 from src.utils.logger import get_logger
 from src.utils.config import config
+from src.utils.market_hours import check_market_hours, get_market_status_detailed
 
 logger = get_logger('auto_trading_bot', config.get('logging'))
 
@@ -199,6 +200,22 @@ def main():
     )
     
     args = parser.parse_args()
+    
+    # Check market hours before starting
+    is_market_open, market_message = check_market_hours()
+    print("=" * 80)
+    print(market_message)
+    
+    if not is_market_open:
+        market_status = get_market_status_detailed()
+        print(f"Market Status: {market_status['current_day']} {market_status['current_time']}")
+        print(f"Next Event: {market_status['next_event']}")
+        print(f"Market Hours: {market_status['market_hours']}")
+        print("=" * 80)
+        print("Bot will start but wait for market to open...\n")
+    else:
+        print("Market is open - Starting trading operations...")
+        print("=" * 80 + "\n")
     
     # Create bot
     bot = AutomatedTradingBot(dry_run=not args.live)
