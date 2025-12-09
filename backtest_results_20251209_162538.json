@@ -1,0 +1,112 @@
+{
+  "timestamp": "20251209_162538",
+  "summary": {
+    "total_symbols_tested": 10,
+    "symbols_with_signals": 1,
+    "total_signals": 1,
+    "total_buy_signals": 1,
+    "total_sell_signals": 0,
+    "avg_signals_per_symbol": 0.1,
+    "test_period_days": 30
+  },
+  "results": [
+    {
+      "symbol": "RELIANCE.NS",
+      "total_signals": 0,
+      "buy_signals": 0,
+      "sell_signals": 0,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": []
+    },
+    {
+      "symbol": "TCS.NS",
+      "total_signals": 1,
+      "buy_signals": 1,
+      "sell_signals": 0,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:25:36.476672",
+          "type": "BUY",
+          "price": 3205.9,
+          "strength": 0.625,
+          "reason": "BUY: Uptrend dip - Price \u20b93205.90 > EMA50 \u20b93205.57 + RSI 38.7 < 40"
+        }
+      ]
+    },
+    {
+      "symbol": "HDFCBANK.NS",
+      "total_signals": 0,
+      "buy_signals": 0,
+      "sell_signals": 0,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": []
+    },
+    {
+      "symbol": "INFY.NS",
+      "total_signals": 0,
+      "buy_signals": 0,
+      "sell_signals": 0,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": []
+    },
+    {
+      "symbol": "ICICIBANK.NS",
+      "total_signals": 0,
+      "buy_signals": 0,
+      "sell_signals": 0,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": []
+    },
+    {
+      "symbol": "HINDUNILVR.NS",
+      "total_signals": 0,
+      "buy_signals": 0,
+      "sell_signals": 0,
+      "data_points": 1643,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": []
+    },
+    {
+      "symbol": "ITC.NS",
+      "total_signals": 0,
+      "buy_signals": 0,
+      "sell_signals": 0,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": []
+    },
+    {
+      "symbol": "SBIN.NS",
+      "total_signals": 0,
+      "buy_signals": 0,
+      "sell_signals": 0,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": []
+    },
+    {
+      "symbol": "BHARTIARTL.NS",
+      "total_signals": 0,
+      "buy_signals": 0,
+      "sell_signals": 0,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": []
+    },
+    {
+      "symbol": "KOTAKBANK.NS",
+      "total_signals": 0,
+      "buy_signals": 0,
+      "sell_signals": 0,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": []
+    }
+  ]
+}

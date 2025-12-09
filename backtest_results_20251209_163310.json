@@ -1,0 +1,491 @@
+{
+  "timestamp": "20251209_163310",
+  "summary": {
+    "total_symbols_tested": 10,
+    "symbols_with_signals": 9,
+    "total_signals": 54,
+    "total_buy_signals": 27,
+    "total_sell_signals": 27,
+    "avg_signals_per_symbol": 5.4,
+    "test_period_days": 30
+  },
+  "results": [
+    {
+      "symbol": "RELIANCE.NS",
+      "total_signals": 8,
+      "buy_signals": 4,
+      "sell_signals": 4,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:33:07.686722",
+          "type": "BUY",
+          "price": 1531.2,
+          "strength": 0.75,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 2.1x | Tier2: MACD bullish (-0.47 > -0.92) +30pts | Significant candle (0.21%) +10pts | Exceptional volume (2.1x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:07.694515",
+          "type": "SELL",
+          "price": 1531.2,
+          "strength": 0.25,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 2.1x | Tier2: MACD bullish (-0.47 > -0.92) +30pts | Significant candle (0.21%) +10pts | Exceptional volume (2.1x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:07.696733",
+          "type": "BUY",
+          "price": 1530.9,
+          "strength": 0.75,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 3.0x | Tier2: MACD bullish (-0.93 > -1.11) +30pts | Significant candle (0.20%) +10pts | Exceptional volume (3.0x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:07.699513",
+          "type": "SELL",
+          "price": 1530.9,
+          "strength": 0.25,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 3.0x | Tier2: MACD bullish (-0.93 > -1.11) +30pts | Significant candle (0.20%) +10pts | Exceptional volume (3.0x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:07.702162",
+          "type": "BUY",
+          "price": 1528.9,
+          "strength": 0.5,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 4.0x | Tier2: MACD bearish (-1.22 < -1.16) +30pts | Significant candle (0.16%) +10pts | Exceptional volume (4.0x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:07.704162",
+          "type": "SELL",
+          "price": 1528.9,
+          "strength": 0.5,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 4.0x | Tier2: MACD bearish (-1.22 < -1.16) +30pts | Significant candle (0.16%) +10pts | Exceptional volume (4.0x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:07.707163",
+          "type": "BUY",
+          "price": 1527.0,
+          "strength": 0.375,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 4.0x | Tier2: MACD bearish (-1.37 < -1.14) +30pts | Significant candle (0.17%) +10pts | Exceptional volume (4.0x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:07.709163",
+          "type": "SELL",
+          "price": 1527.0,
+          "strength": 0.625,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 4.0x | Tier2: MACD bearish (-1.37 < -1.14) +30pts | Significant candle (0.17%) +10pts | Exceptional volume (4.0x) +10pts | SCORE: 50%"
+        }
+      ]
+    },
+    {
+      "symbol": "TCS.NS",
+      "total_signals": 2,
+      "buy_signals": 1,
+      "sell_signals": 1,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:33:08.051769",
+          "type": "BUY",
+          "price": 3204.4,
+          "strength": 0.25,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 3.2x | Tier2: MACD bearish (0.95 < 1.44) +30pts | Significant candle (0.21%) +10pts | Exceptional volume (3.2x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.053775",
+          "type": "SELL",
+          "price": 3204.4,
+          "strength": 0.75,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 3.2x | Tier2: MACD bearish (0.95 < 1.44) +30pts | Significant candle (0.21%) +10pts | Exceptional volume (3.2x) +10pts | SCORE: 50%"
+        }
+      ]
+    },
+    {
+      "symbol": "HDFCBANK.NS",
+      "total_signals": 12,
+      "buy_signals": 6,
+      "sell_signals": 6,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:33:08.357595",
+          "type": "BUY",
+          "price": 997.0,
+          "strength": 0.375,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 1.4x | Tier2: MACD bearish (-0.81 < -0.51) +30pts | At VWAP band (\u00b10.01%) +20pts | Significant candle (0.24%) +10pts | SCORE: 60%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.361645",
+          "type": "SELL",
+          "price": 997.0,
+          "strength": 0.5,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 1.4x | Tier2: MACD bearish (-0.81 < -0.51) +30pts | At VWAP band (\u00b10.01%) +20pts | Significant candle (0.24%) +10pts | SCORE: 60%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.364801",
+          "type": "BUY",
+          "price": 996.2,
+          "strength": 0.375,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 2.1x | Tier2: MACD bearish (-0.81 < -0.43) +30pts | At VWAP band (\u00b10.09%) +20pts | Exceptional volume (2.1x) +10pts | SCORE: 60%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.367876",
+          "type": "SELL",
+          "price": 996.2,
+          "strength": 0.375,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 2.1x | Tier2: MACD bearish (-0.81 < -0.43) +30pts | At VWAP band (\u00b10.09%) +20pts | Exceptional volume (2.1x) +10pts | SCORE: 60%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.370899",
+          "type": "BUY",
+          "price": 995.6,
+          "strength": 0.25,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 2.5x | Tier2: MACD bearish (-0.71 < -0.34) +30pts | At VWAP band (\u00b10.15%) +20pts | Exceptional volume (2.5x) +10pts | SCORE: 60%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.373875",
+          "type": "SELL",
+          "price": 995.6,
+          "strength": 0.5,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 2.5x | Tier2: MACD bearish (-0.71 < -0.34) +30pts | At VWAP band (\u00b10.15%) +20pts | Exceptional volume (2.5x) +10pts | SCORE: 60%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.377874",
+          "type": "BUY",
+          "price": 997.0,
+          "strength": 0.25,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 4.5x | Tier2: MACD bearish (-0.51 < -0.25) +30pts | At VWAP band (\u00b10.01%) +20pts | Significant candle (0.21%) +10pts | Exceptional volume (4.5x) +10pts | SCORE: 70%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.380892",
+          "type": "SELL",
+          "price": 997.0,
+          "strength": 0.5,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 4.5x | Tier2: MACD bearish (-0.51 < -0.25) +30pts | At VWAP band (\u00b10.01%) +20pts | Significant candle (0.21%) +10pts | Exceptional volume (4.5x) +10pts | SCORE: 70%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.384876",
+          "type": "BUY",
+          "price": 997.1,
+          "strength": 0.125,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 3.1x | Tier2: MACD bearish (-0.39 < -0.18) +30pts | At VWAP band (\u00b10.00%) +20pts | Exceptional volume (3.1x) +10pts | SCORE: 60%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.386994",
+          "type": "SELL",
+          "price": 997.1,
+          "strength": 0.5,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 3.1x | Tier2: MACD bearish (-0.39 < -0.18) +30pts | At VWAP band (\u00b10.00%) +20pts | Exceptional volume (3.1x) +10pts | SCORE: 60%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.390042",
+          "type": "BUY",
+          "price": 997.9,
+          "strength": 0.25,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 4.9x | Tier2: MACD bearish (-0.24 < -0.13) +30pts | At VWAP band (\u00b10.08%) +20pts | Significant candle (0.23%) +10pts | Exceptional volume (4.9x) +10pts | SCORE: 70%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.392051",
+          "type": "SELL",
+          "price": 997.9,
+          "strength": 0.625,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 4.9x | Tier2: MACD bearish (-0.24 < -0.13) +30pts | At VWAP band (\u00b10.08%) +20pts | Significant candle (0.23%) +10pts | Exceptional volume (4.9x) +10pts | SCORE: 70%"
+        }
+      ]
+    },
+    {
+      "symbol": "INFY.NS",
+      "total_signals": 8,
+      "buy_signals": 4,
+      "sell_signals": 4,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:33:08.773731",
+          "type": "BUY",
+          "price": 1599.6,
+          "strength": 0.625,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 2.1x | Tier2: MACD bullish (0.46 > 0.16) +30pts | Significant candle (0.16%) +10pts | Exceptional volume (2.1x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.776703",
+          "type": "SELL",
+          "price": 1599.6,
+          "strength": 0.375,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 2.1x | Tier2: MACD bullish (0.46 > 0.16) +30pts | Significant candle (0.16%) +10pts | Exceptional volume (2.1x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.778705",
+          "type": "BUY",
+          "price": 1598.7,
+          "strength": 0.625,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 4.2x | Tier2: MACD bullish (0.28 > 0.09) +30pts | Significant candle (0.33%) +10pts | Exceptional volume (4.2x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.780705",
+          "type": "SELL",
+          "price": 1598.7,
+          "strength": 0.375,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 4.2x | Tier2: MACD bullish (0.28 > 0.09) +30pts | Significant candle (0.33%) +10pts | Exceptional volume (4.2x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.782704",
+          "type": "BUY",
+          "price": 1597.3,
+          "strength": 0.5,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 3.5x | Tier2: MACD bullish (0.13 > 0.04) +30pts | Significant candle (0.16%) +10pts | Exceptional volume (3.5x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.784703",
+          "type": "SELL",
+          "price": 1597.3,
+          "strength": 0.5,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 3.5x | Tier2: MACD bullish (0.13 > 0.04) +30pts | Significant candle (0.16%) +10pts | Exceptional volume (3.5x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.786705",
+          "type": "BUY",
+          "price": 1598.4,
+          "strength": 0.625,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 4.3x | Tier2: MACD bullish (0.09 > 0.02) +30pts | Significant candle (0.18%) +10pts | Exceptional volume (4.3x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:08.787703",
+          "type": "SELL",
+          "price": 1598.4,
+          "strength": 0.375,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 4.3x | Tier2: MACD bullish (0.09 > 0.02) +30pts | Significant candle (0.18%) +10pts | Exceptional volume (4.3x) +10pts | SCORE: 50%"
+        }
+      ]
+    },
+    {
+      "symbol": "ICICIBANK.NS",
+      "total_signals": 0,
+      "buy_signals": 0,
+      "sell_signals": 0,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": []
+    },
+    {
+      "symbol": "HINDUNILVR.NS",
+      "total_signals": 6,
+      "buy_signals": 3,
+      "sell_signals": 3,
+      "data_points": 1643,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:33:09.417802",
+          "type": "BUY",
+          "price": 2303.0,
+          "strength": 0.375,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 3.4x | Tier2: MACD bearish (-2.95 < -2.78) +30pts | Significant candle (0.30%) +10pts | Exceptional volume (3.4x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:09.420762",
+          "type": "SELL",
+          "price": 2303.0,
+          "strength": 0.625,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 3.4x | Tier2: MACD bearish (-2.95 < -2.78) +30pts | Significant candle (0.30%) +10pts | Exceptional volume (3.4x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:09.423763",
+          "type": "BUY",
+          "price": 2306.0,
+          "strength": 0.375,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 4.2x | Tier2: MACD bearish (-2.76 < -2.74) +30pts | Significant candle (0.23%) +10pts | Exceptional volume (4.2x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:09.425759",
+          "type": "SELL",
+          "price": 2306.0,
+          "strength": 0.625,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 4.2x | Tier2: MACD bearish (-2.76 < -2.74) +30pts | Significant candle (0.23%) +10pts | Exceptional volume (4.2x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:09.428759",
+          "type": "BUY",
+          "price": 2308.1,
+          "strength": 0.5,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 4.0x | Tier2: MACD bearish (-2.79 < -2.74) +30pts | Significant candle (0.19%) +10pts | Exceptional volume (4.0x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:09.430759",
+          "type": "SELL",
+          "price": 2308.1,
+          "strength": 0.5,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 4.0x | Tier2: MACD bearish (-2.79 < -2.74) +30pts | Significant candle (0.19%) +10pts | Exceptional volume (4.0x) +10pts | SCORE: 50%"
+        }
+      ]
+    },
+    {
+      "symbol": "ITC.NS",
+      "total_signals": 4,
+      "buy_signals": 2,
+      "sell_signals": 2,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:33:09.730302",
+          "type": "BUY",
+          "price": 400.35,
+          "strength": 0.5,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 2.5x | Tier2: MACD bearish (-0.52 < -0.40) +30pts | Significant candle (0.36%) +10pts | Exceptional volume (2.5x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:09.733285",
+          "type": "SELL",
+          "price": 400.35,
+          "strength": 0.625,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 2.5x | Tier2: MACD bearish (-0.52 < -0.40) +30pts | Significant candle (0.36%) +10pts | Exceptional volume (2.5x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:09.736272",
+          "type": "BUY",
+          "price": 401.5,
+          "strength": 0.625,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 2.3x | Tier2: MACD bearish (-0.44 < -0.37) +30pts | Significant candle (0.19%) +10pts | Exceptional volume (2.3x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:09.739481",
+          "type": "SELL",
+          "price": 401.5,
+          "strength": 0.5,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 2.3x | Tier2: MACD bearish (-0.44 < -0.37) +30pts | Significant candle (0.19%) +10pts | Exceptional volume (2.3x) +10pts | SCORE: 50%"
+        }
+      ]
+    },
+    {
+      "symbol": "SBIN.NS",
+      "total_signals": 6,
+      "buy_signals": 3,
+      "sell_signals": 3,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:33:10.051608",
+          "type": "BUY",
+          "price": 959.15,
+          "strength": 0.5,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 3.3x | Tier2: MACD bearish (-0.58 < -0.53) +30pts | Significant candle (0.31%) +10pts | Exceptional volume (3.3x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:10.053601",
+          "type": "SELL",
+          "price": 959.15,
+          "strength": 0.5,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 3.3x | Tier2: MACD bearish (-0.58 < -0.53) +30pts | Significant candle (0.31%) +10pts | Exceptional volume (3.3x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:10.056986",
+          "type": "BUY",
+          "price": 958.4,
+          "strength": 0.5,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 2.2x | Tier2: MACD bearish (-0.64 < -0.51) +30pts | Significant candle (0.20%) +10pts | Exceptional volume (2.2x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:10.058985",
+          "type": "SELL",
+          "price": 958.4,
+          "strength": 0.625,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 2.2x | Tier2: MACD bearish (-0.64 < -0.51) +30pts | Significant candle (0.20%) +10pts | Exceptional volume (2.2x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:10.059985",
+          "type": "BUY",
+          "price": 959.7,
+          "strength": 0.625,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 3.3x | Tier2: MACD bearish (-0.63 < -0.48) +30pts | Significant candle (0.19%) +10pts | Exceptional volume (3.3x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:10.062068",
+          "type": "SELL",
+          "price": 959.7,
+          "strength": 0.5,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 3.3x | Tier2: MACD bearish (-0.63 < -0.48) +30pts | Significant candle (0.19%) +10pts | Exceptional volume (3.3x) +10pts | SCORE: 50%"
+        }
+      ]
+    },
+    {
+      "symbol": "BHARTIARTL.NS",
+      "total_signals": 4,
+      "buy_signals": 2,
+      "sell_signals": 2,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:33:10.378991",
+          "type": "BUY",
+          "price": 2089.8,
+          "strength": 0.625,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 3.6x | Tier2: MACD bullish (0.80 > 0.08) +30pts | Significant candle (0.16%) +10pts | Exceptional volume (3.6x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:10.381961",
+          "type": "SELL",
+          "price": 2089.8,
+          "strength": 0.375,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 3.6x | Tier2: MACD bullish (0.80 > 0.08) +30pts | Significant candle (0.16%) +10pts | Exceptional volume (3.6x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:10.385979",
+          "type": "BUY",
+          "price": 2091.5,
+          "strength": 0.75,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 5.0x | Tier2: MACD bullish (0.31 > -0.30) +30pts | Significant candle (0.20%) +10pts | Exceptional volume (5.0x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:10.388964",
+          "type": "SELL",
+          "price": 2091.5,
+          "strength": 0.25,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 5.0x | Tier2: MACD bullish (0.31 > -0.30) +30pts | Significant candle (0.20%) +10pts | Exceptional volume (5.0x) +10pts | SCORE: 50%"
+        }
+      ]
+    },
+    {
+      "symbol": "KOTAKBANK.NS",
+      "total_signals": 4,
+      "buy_signals": 2,
+      "sell_signals": 2,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:33:10.709201",
+          "type": "BUY",
+          "price": 2131.2,
+          "strength": 0.625,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 2.3x | Tier2: MACD bullish (0.78 > 0.26) +30pts | Significant candle (0.15%) +10pts | Exceptional volume (2.3x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:10.712195",
+          "type": "SELL",
+          "price": 2131.2,
+          "strength": 0.375,
+          "reason": "BUY: Tier1\u2713: UPTREND + Volume 2.3x | Tier2: MACD bullish (0.78 > 0.26) +30pts | Significant candle (0.15%) +10pts | Exceptional volume (2.3x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:10.715196",
+          "type": "BUY",
+          "price": 2123.3,
+          "strength": 0.375,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 3.5x | Tier2: MACD bearish (-0.40 < 0.25) +30pts | Significant candle (0.18%) +10pts | Exceptional volume (3.5x) +10pts | SCORE: 50%"
+        },
+        {
+          "timestamp": "2025-12-09 16:33:10.718203",
+          "type": "SELL",
+          "price": 2123.3,
+          "strength": 0.625,
+          "reason": "SELL: Tier1\u2713: DOWNTREND + Volume 3.5x | Tier2: MACD bearish (-0.40 < 0.25) +30pts | Significant candle (0.18%) +10pts | Exceptional volume (3.5x) +10pts | SCORE: 50%"
+        }
+      ]
+    }
+  ]
+}

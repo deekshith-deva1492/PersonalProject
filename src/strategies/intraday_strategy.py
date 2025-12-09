@@ -25,12 +25,21 @@ class IntradayStrategy(BaseStrategy):
         self.indicator_config = self.strategy_config.get('indicators', {})
         self.entry_config = self.strategy_config.get('entry', {})
         
-        # Ultra-simple thresholds
-        self.rsi_oversold = 30  # Dip signal
-        self.rsi_overbought = 70  # Spike signal
-        self.ema_period = 50  # Trend filter
-        self.trend_strength_threshold = 0.005  # 0.5% - EMA separation threshold to avoid sideways markets
-        self.min_candle_range = 0.0015  # 0.15% - Minimum candle range to avoid micro-candles
+        # MUST-HAVE FILTERS (3 mandatory - all must pass)
+        self.ema_period = 50  # Trend bias
+        self.min_volume_multiplier = 1.2  # Volume >= 1.2x
+        self.min_candle_range = 0.0015  # Significant candle (0.15%+)
+        
+        # OPTIONAL CONFIDENCE BOOSTERS (5 available - each adds +1)
+        self.rsi_oversold = 30  # RSI extreme
+        self.rsi_overbought = 70
+        self.vwap_band_threshold = 0.002  # VWAP confluence (within 0.2%)
+        self.trend_strength_threshold = 0.005  # EMA separation (0.5%+)
+        
+        # Signal strength
+        # 3 = valid (all 3 mandatory passed)
+        # 4 = strong (3 mandatory + 1 booster)
+        # 5+ = high probability (3 mandatory + 2+ boosters)
     
     def generate_signals(self, df: pd.DataFrame, symbol: str) -> List[Signal]:
         """
@@ -213,10 +222,24 @@ class IntradayStrategy(BaseStrategy):
     
     def get_entry_conditions(self, row: pd.Series) -> Tuple[bool, str]:
         """
-        Check entry conditions - Ultra Simple Version
+        Simple 3+5 Scoring System
         
-        STEP 1: Check trend (price vs 50 EMA)
-        STEP 2: Buy dips in uptrend OR sell spikes in downtrend
+        MUST-HAVE (all 3 required):
+        1. Trend bias (price vs EMA50)
+        2. Volume >= 1.2x average
+        3. Candle range >= 0.15%
+        
+        OPTIONAL CONFIDENCE BOOSTERS (max +5):
+        +1 RSI extreme (oversold/overbought)
+        +1 MACD improving (aligns with trend)
+        +1 VWAP confluence (near band)
+        +1 EMA separation (strong trend)
+        +1 Candle pattern (bullish/bearish reversal)
+        
+        Score:
+        3 = valid signal
+        4 = strong signal
+        5+ = high probability signal
         
         Args:
             row: Data row with indicators
@@ -224,131 +247,123 @@ class IntradayStrategy(BaseStrategy):
         Returns:
             Tuple of (should_enter, reason)
         """
-        # STEP 1: Determine trend using 50 EMA
+        # Check we have required data
         if 'ema_50' not in row or pd.isna(row['ema_50']):
             return False, "No EMA data yet"
         
+        # Extract values
         price = row['close']
-        ema_50 = row['ema_50']
-        rsi = row['rsi']
-        vwap = row.get('vwap', price)
-        
-        # Calculate VWAP bands (simple standard deviation)
-        vwap_upper = vwap * 1.002  # ~0.2% above VWAP
-        vwap_lower = vwap * 0.998  # ~0.2% below VWAP
-        
-        # Check volume confirmation
-        volume = row.get('volume', 0)
-        volume_avg = row.get('volume_avg', 1)
-        has_volume = volume >= volume_avg * 1.2
-        
-        if not has_volume:
-            return False, "Insufficient volume (< 1.2x average) - filtering out low-volume fake signals"
-        
-        # Check MACD momentum
-        macd = row.get('macd', 0)
-        macd_signal = row.get('macd_signal', 0)
-        has_bullish_momentum = macd > macd_signal
-        
-        if not has_bullish_momentum:
-            return False, "No bullish momentum (MACD <= signal line) - waiting for momentum confirmation"
-        
-        # Check trend strength (avoid sideways/choppy markets)
-        ema_20 = row.get('ema_20', ema_50)
-        ema_separation = abs(ema_20 - ema_50) / ema_50  # Percentage separation
-        has_trend_strength = ema_separation >= self.trend_strength_threshold
-        
-        if not has_trend_strength:
-            return False, f"Sideways market detected (EMA20-EMA50 separation: {ema_separation*100:.2f}% < {self.trend_strength_threshold*100:.1f}%) - avoiding choppy conditions"
-        
-        # Check candle range (avoid micro-candles with no real movement)
+        open_price = row['open']
         high = row.get('high', price)
         low = row.get('low', price)
+        ema_50 = row['ema_50']
+        ema_20 = row.get('ema_20', ema_50)
+        rsi = row['rsi']
+        vwap = row.get('vwap', price)
+        macd = row.get('macd', 0)
+        macd_signal = row.get('macd_signal', 0)
+        volume = row.get('volume', 0)
+        volume_avg = row.get('volume_avg', 1)
+        
+        # ============================================================
+        # MUST-HAVE #1: Trend Bias
+        # ============================================================
+        is_uptrend = price > ema_50
+        is_downtrend = price < ema_50
+        
+        if not (is_uptrend or is_downtrend):
+            return False, "No clear trend bias"
+        
+        # ============================================================
+        # MUST-HAVE #2: Volume
+        # ============================================================
+        volume_ratio = volume / volume_avg if volume_avg > 0 else 0
+        if volume_ratio < self.min_volume_multiplier:
+            return False, f"Volume too low ({volume_ratio:.1f}x < {self.min_volume_multiplier}x)"
+        
+        # ============================================================
+        # MUST-HAVE #3: Candle Range
+        # ============================================================
         candle_range = (high - low) / price if price > 0 else 0
-        has_sufficient_range = candle_range >= self.min_candle_range
+        if candle_range < self.min_candle_range:
+            return False, f"Candle too small ({candle_range*100:.2f}% < {self.min_candle_range*100:.2f}%)"
         
-        if not has_sufficient_range:
-            return False, f"Micro-candle detected (range: {candle_range*100:.3f}% < {self.min_candle_range*100:.2f}%) - no real movement"
+        # ============================================================
+        # ALL 3 MUST-HAVES PASSED! Score starts at 3
+        # ============================================================
+        score = 3
+        boosters = []
         
-        # STEP 2: BUY Setup (only in uptrend)
-        if price > ema_50:
-            # In UPTREND - look for dips to buy
-            if rsi < self.rsi_oversold:  # RSI oversold
-                if price <= vwap_lower:  # Price at lower VWAP band
-                    # Check if price is starting to go up (reversal)
-                    if 'close' in row and 'open' in row:
-                        if row['close'] > row['open']:  # Bullish candle
-                            return True, "BUY: Uptrend dip - RSI oversold + VWAP lower + bullish reversal + volume + MACD momentum + trend strength + candle range confirmed"
+        # BOOSTER #1: RSI Extreme (+1)
+        if is_uptrend and rsi < self.rsi_oversold:
+            score += 1
+            boosters.append(f"RSI oversold ({rsi:.1f})")
+        elif is_downtrend and rsi > self.rsi_overbought:
+            score += 1
+            boosters.append(f"RSI overbought ({rsi:.1f})")
         
-        # STEP 2: SELL Setup (only in downtrend)
-        elif price < ema_50:
-            # In DOWNTREND - look for spikes to sell
-            if rsi > self.rsi_overbought:  # RSI overbought
-                if price >= vwap_upper:  # Price at upper VWAP band
-                    # Check if price is starting to go down (reversal)
-                    if 'close' in row and 'open' in row:
-                        if row['close'] < row['open']:  # Bearish candle
-                            return True, "SELL: Downtrend spike - RSI overbought + VWAP upper + bearish reversal + volume + MACD momentum + trend strength + candle range confirmed"
+        # BOOSTER #2: MACD Improving (+1)
+        if is_uptrend and macd > macd_signal:
+            score += 1
+            boosters.append(f"MACD bullish ({macd:.2f}>{macd_signal:.2f})")
+        elif is_downtrend and macd < macd_signal:
+            score += 1
+            boosters.append(f"MACD bearish ({macd:.2f}<{macd_signal:.2f})")
         
-        return False, "No setup: Waiting for clear dip/spike with trend"
+        # BOOSTER #3: VWAP Confluence (+1)
+        vwap_distance = abs(price - vwap) / vwap if vwap > 0 else 1
+        if vwap_distance <= self.vwap_band_threshold:
+            score += 1
+            boosters.append(f"Near VWAP (±{vwap_distance*100:.2f}%)")
+        
+        # BOOSTER #4: EMA Separation / Strong Trend (+1)
+        ema_separation = abs(ema_20 - ema_50) / ema_50 if ema_50 > 0 else 0
+        if ema_separation >= self.trend_strength_threshold:
+            score += 1
+            boosters.append(f"Strong trend ({ema_separation*100:.2f}%)")
+        
+        # BOOSTER #5: Candle Pattern (+1)
+        is_bullish_candle = price > open_price
+        is_bearish_candle = price < open_price
+        if is_uptrend and is_bullish_candle:
+            score += 1
+            boosters.append("Bullish candle")
+        elif is_downtrend and is_bearish_candle:
+            score += 1
+            boosters.append("Bearish candle")
+        
+        # ============================================================
+        # BUILD SIGNAL REASON
+        # ============================================================
+        signal_type = "BUY" if is_uptrend else "SELL"
+        trend_text = "UPTREND" if is_uptrend else "DOWNTREND"
+        
+        # Must-haves summary
+        must_have = f"{trend_text} + Vol {volume_ratio:.1f}x + Candle {candle_range*100:.2f}%"
+        
+        # Boosters summary
+        booster_text = " | ".join(boosters) if boosters else "no boosters"
+        
+        # Quality level
+        if score >= 5:
+            quality = "HIGH-PROB"
+        elif score >= 4:
+            quality = "STRONG"
+        else:
+            quality = "VALID"
+        
+        reason = f"{signal_type} [{quality} {score}/8]: {must_have} | {booster_text}"
+        
+        return True, reason
     
     def _check_sell_conditions(self, row: pd.Series) -> Tuple[bool, str]:
         """
-        Check conditions for SELL/SHORT signal (in downtrend only)
-        Same logic as buy but reversed
+        Check conditions for SELL/SHORT signal
+        
+        NOTE: Now uses the same tiered scoring system as get_entry_conditions()
+        This method just calls get_entry_conditions() for consistency
         """
-        if 'ema_50' not in row or pd.isna(row['ema_50']):
-            return False, "No EMA data yet"
-        
-        price = row['close']
-        ema_50 = row['ema_50']
-        rsi = row['rsi']
-        vwap = row.get('vwap', price)
-        
-        # Check volume confirmation for sell signals too
-        volume = row.get('volume', 0)
-        volume_avg = row.get('volume_avg', 1)
-        has_volume = volume >= volume_avg * 1.2
-        
-        if not has_volume:
-            return False, "Insufficient volume (< 1.2x average) - filtering out low-volume fake signals"
-        
-        # Check MACD momentum for sell
-        macd = row.get('macd', 0)
-        macd_signal = row.get('macd_signal', 0)
-        has_bearish_momentum = macd < macd_signal
-        
-        if not has_bearish_momentum:
-            return False, "No bearish momentum (MACD >= signal line) - waiting for momentum confirmation"
-        
-        # Check trend strength (avoid sideways/choppy markets)
-        ema_20 = row.get('ema_20', ema_50)
-        ema_separation = abs(ema_20 - ema_50) / ema_50  # Percentage separation
-        has_trend_strength = ema_separation >= self.trend_strength_threshold
-        
-        if not has_trend_strength:
-            return False, f"Sideways market detected (EMA20-EMA50 separation: {ema_separation*100:.2f}% < {self.trend_strength_threshold*100:.1f}%) - avoiding choppy conditions"
-        
-        # Check candle range (avoid micro-candles with no real movement)
-        high = row.get('high', price)
-        low = row.get('low', price)
-        candle_range = (high - low) / price if price > 0 else 0
-        has_sufficient_range = candle_range >= self.min_candle_range
-        
-        if not has_sufficient_range:
-            return False, f"Micro-candle detected (range: {candle_range*100:.3f}% < {self.min_candle_range*100:.2f}%) - no real movement"
-        
-        # Only sell short in DOWNTREND
-        if price < ema_50:
-            vwap_upper = vwap * 1.002
-            
-            if rsi > self.rsi_overbought:  # RSI overbought
-                if price >= vwap_upper:  # Price at upper VWAP band
-                    if 'close' in row and 'open' in row:
-                        if row['close'] < row['open']:  # Bearish candle starting
-                            return True, "SELL: Downtrend spike - RSI overbought + VWAP upper + bearish reversal + volume + MACD momentum + trend strength + candle range confirmed"
-        
-        return False, "No sell setup"
+        return self.get_entry_conditions(row)
     
     def get_exit_conditions(
         self,

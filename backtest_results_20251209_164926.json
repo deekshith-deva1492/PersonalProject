@@ -1,0 +1,3160 @@
+{
+  "timestamp": "20251209_164926",
+  "summary": {
+    "total_symbols_tested": 50,
+    "symbols_with_signals": 49,
+    "total_signals": 378,
+    "total_buy_signals": 189,
+    "total_sell_signals": 189,
+    "avg_signals_per_symbol": 7.56,
+    "test_period_days": 30
+  },
+  "results": [
+    {
+      "symbol": "RELIANCE.NS",
+      "total_signals": 8,
+      "buy_signals": 4,
+      "sell_signals": 4,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:11.658601",
+          "type": "BUY",
+          "price": 1531.2,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.1x + Candle 0.21% | MACD bullish (-0.47>-0.92) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:11.658601",
+          "type": "SELL",
+          "price": 1531.2,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.1x + Candle 0.21% | MACD bullish (-0.47>-0.92) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:11.659603",
+          "type": "BUY",
+          "price": 1530.9,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 3.0x + Candle 0.20% | MACD bullish (-0.93>-1.11) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:11.659603",
+          "type": "SELL",
+          "price": 1530.9,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 3.0x + Candle 0.20% | MACD bullish (-0.93>-1.11) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:11.660599",
+          "type": "BUY",
+          "price": 1528.9,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 4.0x + Candle 0.16% | MACD bearish (-1.22<-1.16)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:11.660599",
+          "type": "SELL",
+          "price": 1528.9,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 4.0x + Candle 0.16% | MACD bearish (-1.22<-1.16)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:11.661631",
+          "type": "BUY",
+          "price": 1527.0,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 4.0x + Candle 0.17% | MACD bearish (-1.37<-1.14) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:11.661631",
+          "type": "SELL",
+          "price": 1527.0,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 4.0x + Candle 0.17% | MACD bearish (-1.37<-1.14) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "TCS.NS",
+      "total_signals": 8,
+      "buy_signals": 4,
+      "sell_signals": 4,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:11.983068",
+          "type": "BUY",
+          "price": 3204.4,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.2x + Candle 0.21% | MACD bearish (0.95<1.44) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:11.984068",
+          "type": "SELL",
+          "price": 3204.4,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.2x + Candle 0.21% | MACD bearish (0.95<1.44) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:11.984068",
+          "type": "BUY",
+          "price": 3207.4,
+          "strength": 0.375,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 3.8x + Candle 0.17% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:11.984068",
+          "type": "SELL",
+          "price": 3207.4,
+          "strength": 0.625,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 3.8x + Candle 0.17% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:11.985069",
+          "type": "BUY",
+          "price": 3211.1,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 4.5x + Candle 0.22% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:11.985069",
+          "type": "SELL",
+          "price": 3211.1,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 4.5x + Candle 0.22% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:11.986039",
+          "type": "BUY",
+          "price": 3207.6,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 1.4x + Candle 0.17% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:11.986039",
+          "type": "SELL",
+          "price": 3207.6,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 1.4x + Candle 0.17% | Bullish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "HDFCBANK.NS",
+      "total_signals": 8,
+      "buy_signals": 4,
+      "sell_signals": 4,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:12.325264",
+          "type": "BUY",
+          "price": 997.0,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.4x + Candle 0.24% | MACD bearish (-0.81<-0.51) | Near VWAP (\u00b10.01%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.325264",
+          "type": "SELL",
+          "price": 997.0,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.4x + Candle 0.24% | MACD bearish (-0.81<-0.51) | Near VWAP (\u00b10.01%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.325264",
+          "type": "BUY",
+          "price": 997.0,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 4.5x + Candle 0.21% | MACD bearish (-0.51<-0.25) | Near VWAP (\u00b10.01%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.325264",
+          "type": "SELL",
+          "price": 997.0,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 4.5x + Candle 0.21% | MACD bearish (-0.51<-0.25) | Near VWAP (\u00b10.01%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.325264",
+          "type": "BUY",
+          "price": 997.9,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 6/8]: DOWNTREND + Vol 4.9x + Candle 0.23% | MACD bearish (-0.24<-0.13) | Near VWAP (\u00b10.08%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.325264",
+          "type": "SELL",
+          "price": 997.9,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 6/8]: DOWNTREND + Vol 4.9x + Candle 0.23% | MACD bearish (-0.24<-0.13) | Near VWAP (\u00b10.08%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.325264",
+          "type": "BUY",
+          "price": 999.6,
+          "strength": 0.375,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.3x + Candle 0.16% | MACD bearish (-0.13<-0.11)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.325264",
+          "type": "SELL",
+          "price": 999.6,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.3x + Candle 0.16% | MACD bearish (-0.13<-0.11)"
+        }
+      ]
+    },
+    {
+      "symbol": "INFY.NS",
+      "total_signals": 10,
+      "buy_signals": 5,
+      "sell_signals": 5,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:12.632945",
+          "type": "BUY",
+          "price": 1599.6,
+          "strength": 0.625,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.1x + Candle 0.16% | MACD bullish (0.46>0.16) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.632945",
+          "type": "SELL",
+          "price": 1599.6,
+          "strength": 0.375,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.1x + Candle 0.16% | MACD bullish (0.46>0.16) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.632945",
+          "type": "BUY",
+          "price": 1598.7,
+          "strength": 0.625,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 4.2x + Candle 0.33% | MACD bullish (0.28>0.09) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.632945",
+          "type": "SELL",
+          "price": 1598.7,
+          "strength": 0.375,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 4.2x + Candle 0.33% | MACD bullish (0.28>0.09) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.632945",
+          "type": "BUY",
+          "price": 1597.3,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 3.5x + Candle 0.16% | MACD bullish (0.13>0.04)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.632945",
+          "type": "SELL",
+          "price": 1597.3,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 3.5x + Candle 0.16% | MACD bullish (0.13>0.04)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.632945",
+          "type": "BUY",
+          "price": 1598.4,
+          "strength": 0.625,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 4.3x + Candle 0.18% | MACD bullish (0.09>0.02) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.632945",
+          "type": "SELL",
+          "price": 1598.4,
+          "strength": 0.375,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 4.3x + Candle 0.18% | MACD bullish (0.09>0.02) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.632945",
+          "type": "BUY",
+          "price": 1597.4,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 1.9x + Candle 0.21% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.632945",
+          "type": "SELL",
+          "price": 1597.4,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 1.9x + Candle 0.21% | Bullish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "ICICIBANK.NS",
+      "total_signals": 8,
+      "buy_signals": 4,
+      "sell_signals": 4,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:12.977398",
+          "type": "BUY",
+          "price": 1374.6,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.8x + Candle 0.15% | Near VWAP (\u00b10.09%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.977398",
+          "type": "SELL",
+          "price": 1374.6,
+          "strength": 0.375,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.8x + Candle 0.15% | Near VWAP (\u00b10.09%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.977398",
+          "type": "BUY",
+          "price": 1375.1,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.5x + Candle 0.21% | Near VWAP (\u00b10.05%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.977398",
+          "type": "SELL",
+          "price": 1375.1,
+          "strength": 0.375,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.5x + Candle 0.21% | Near VWAP (\u00b10.05%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.977398",
+          "type": "BUY",
+          "price": 1374.6,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.0x + Candle 0.15% | Near VWAP (\u00b10.09%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.977398",
+          "type": "SELL",
+          "price": 1374.6,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.0x + Candle 0.15% | Near VWAP (\u00b10.09%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.977398",
+          "type": "BUY",
+          "price": 1376.2,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.5x + Candle 0.15% | Near VWAP (\u00b10.03%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:12.977398",
+          "type": "SELL",
+          "price": 1376.2,
+          "strength": 0.375,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.5x + Candle 0.15% | Near VWAP (\u00b10.03%)"
+        }
+      ]
+    },
+    {
+      "symbol": "HINDUNILVR.NS",
+      "total_signals": 8,
+      "buy_signals": 4,
+      "sell_signals": 4,
+      "data_points": 1643,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:13.282006",
+          "type": "BUY",
+          "price": 2303.0,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.4x + Candle 0.30% | MACD bearish (-2.95<-2.78) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.282006",
+          "type": "SELL",
+          "price": 2303.0,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.4x + Candle 0.30% | MACD bearish (-2.95<-2.78) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.282006",
+          "type": "BUY",
+          "price": 2306.0,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 4.2x + Candle 0.23% | MACD bearish (-2.76<-2.74) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.282006",
+          "type": "SELL",
+          "price": 2306.0,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 4.2x + Candle 0.23% | MACD bearish (-2.76<-2.74) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.282006",
+          "type": "BUY",
+          "price": 2308.1,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 4.0x + Candle 0.19% | MACD bearish (-2.79<-2.74)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.282006",
+          "type": "SELL",
+          "price": 2308.1,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 4.0x + Candle 0.19% | MACD bearish (-2.79<-2.74)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.282006",
+          "type": "BUY",
+          "price": 2306.2,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.4x + Candle 0.21% | MACD bearish (-3.25<-2.54) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.282006",
+          "type": "SELL",
+          "price": 2306.2,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.4x + Candle 0.21% | MACD bearish (-3.25<-2.54) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "ITC.NS",
+      "total_signals": 6,
+      "buy_signals": 3,
+      "sell_signals": 3,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:13.585746",
+          "type": "BUY",
+          "price": 400.35,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.5x + Candle 0.36% | MACD bearish (-0.52<-0.40) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.585746",
+          "type": "SELL",
+          "price": 400.35,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.5x + Candle 0.36% | MACD bearish (-0.52<-0.40) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.586762",
+          "type": "BUY",
+          "price": 401.5,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.3x + Candle 0.19% | MACD bearish (-0.44<-0.37)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.586762",
+          "type": "SELL",
+          "price": 401.5,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.3x + Candle 0.19% | MACD bearish (-0.44<-0.37)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.587902",
+          "type": "BUY",
+          "price": 401.4,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.8x + Candle 0.19% | MACD bearish (-0.44<-0.36) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.587902",
+          "type": "SELL",
+          "price": 401.4,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.8x + Candle 0.19% | MACD bearish (-0.44<-0.36) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "SBIN.NS",
+      "total_signals": 12,
+      "buy_signals": 6,
+      "sell_signals": 6,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:13.887220",
+          "type": "BUY",
+          "price": 959.05,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.2x + Candle 0.21% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.887220",
+          "type": "SELL",
+          "price": 959.05,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.2x + Candle 0.21% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.887220",
+          "type": "BUY",
+          "price": 959.15,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.3x + Candle 0.31% | MACD bearish (-0.58<-0.53)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.887220",
+          "type": "SELL",
+          "price": 959.15,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.3x + Candle 0.31% | MACD bearish (-0.58<-0.53)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.887220",
+          "type": "BUY",
+          "price": 958.4,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.2x + Candle 0.20% | MACD bearish (-0.64<-0.51) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.887220",
+          "type": "SELL",
+          "price": 958.4,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.2x + Candle 0.20% | MACD bearish (-0.64<-0.51) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.887220",
+          "type": "BUY",
+          "price": 959.7,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.3x + Candle 0.19% | MACD bearish (-0.63<-0.48)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.887220",
+          "type": "SELL",
+          "price": 959.7,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.3x + Candle 0.19% | MACD bearish (-0.63<-0.48)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.887220",
+          "type": "BUY",
+          "price": 958.9,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.4x + Candle 0.17% | MACD bearish (-0.75<-0.44)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.887220",
+          "type": "SELL",
+          "price": 958.9,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.4x + Candle 0.17% | MACD bearish (-0.75<-0.44)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.887220",
+          "type": "BUY",
+          "price": 958.05,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.2x + Candle 0.18% | MACD bearish (-0.76<-0.26)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:13.887220",
+          "type": "SELL",
+          "price": 958.05,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.2x + Candle 0.18% | MACD bearish (-0.76<-0.26)"
+        }
+      ]
+    },
+    {
+      "symbol": "BHARTIARTL.NS",
+      "total_signals": 4,
+      "buy_signals": 2,
+      "sell_signals": 2,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:14.213124",
+          "type": "BUY",
+          "price": 2089.8,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 3.6x + Candle 0.16% | MACD bullish (0.80>0.08)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.213124",
+          "type": "SELL",
+          "price": 2089.8,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 3.6x + Candle 0.16% | MACD bullish (0.80>0.08)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.214135",
+          "type": "BUY",
+          "price": 2091.5,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 5.0x + Candle 0.20% | MACD bullish (0.31>-0.30) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.214135",
+          "type": "SELL",
+          "price": 2091.5,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 5.0x + Candle 0.20% | MACD bullish (0.31>-0.30) | Bullish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "KOTAKBANK.NS",
+      "total_signals": 10,
+      "buy_signals": 5,
+      "sell_signals": 5,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:14.508575",
+          "type": "BUY",
+          "price": 2131.2,
+          "strength": 0.625,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.3x + Candle 0.15% | MACD bullish (0.78>0.26) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.508575",
+          "type": "SELL",
+          "price": 2131.2,
+          "strength": 0.375,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.3x + Candle 0.15% | MACD bullish (0.78>0.26) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.508575",
+          "type": "BUY",
+          "price": 2128.2,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 3.2x + Candle 0.27% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.508575",
+          "type": "SELL",
+          "price": 2128.2,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 3.2x + Candle 0.27% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.508575",
+          "type": "BUY",
+          "price": 2123.3,
+          "strength": 0.375,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.5x + Candle 0.18% | MACD bearish (-0.40<0.25)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.508575",
+          "type": "SELL",
+          "price": 2123.3,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.5x + Candle 0.18% | MACD bearish (-0.40<0.25)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.508575",
+          "type": "BUY",
+          "price": 2122.0,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.4x + Candle 0.17% | MACD bearish (-0.33<0.41) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.508575",
+          "type": "SELL",
+          "price": 2122.0,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.4x + Candle 0.17% | MACD bearish (-0.33<0.41) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.508575",
+          "type": "BUY",
+          "price": 2122.4,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.3x + Candle 0.25% | MACD bearish (0.19<0.77) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.508575",
+          "type": "SELL",
+          "price": 2122.4,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.3x + Candle 0.25% | MACD bearish (0.19<0.77) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "LT.NS",
+      "total_signals": 6,
+      "buy_signals": 3,
+      "sell_signals": 3,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:14.846754",
+          "type": "BUY",
+          "price": 3998.1,
+          "strength": 0.625,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 2.8x + Candle 0.20% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.846754",
+          "type": "SELL",
+          "price": 3998.1,
+          "strength": 0.375,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 2.8x + Candle 0.20% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.846754",
+          "type": "BUY",
+          "price": 3995.4,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.4x + Candle 0.21% | MACD bearish (-2.89<-2.53) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.847766",
+          "type": "SELL",
+          "price": 3995.4,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.4x + Candle 0.21% | MACD bearish (-2.89<-2.53) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.847766",
+          "type": "BUY",
+          "price": 3995.7,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.2x + Candle 0.21% | MACD bearish (-3.07<-2.45) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:14.847766",
+          "type": "SELL",
+          "price": 3995.7,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.2x + Candle 0.21% | MACD bearish (-3.07<-2.45) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "AXISBANK.NS",
+      "total_signals": 10,
+      "buy_signals": 5,
+      "sell_signals": 5,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:15.164323",
+          "type": "BUY",
+          "price": 1275.2,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.3x + Candle 0.21% | MACD bearish (-0.51<-0.00) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.164323",
+          "type": "SELL",
+          "price": 1275.2,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.3x + Candle 0.21% | MACD bearish (-0.51<-0.00) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.165413",
+          "type": "BUY",
+          "price": 1275.5,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.2x + Candle 0.25% | MACD bearish (-0.35<0.27) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.165413",
+          "type": "SELL",
+          "price": 1275.5,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.2x + Candle 0.25% | MACD bearish (-0.35<0.27) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.166421",
+          "type": "BUY",
+          "price": 1275.9,
+          "strength": 0.375,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.6x + Candle 0.26% | MACD bearish (-0.26<0.42)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.166421",
+          "type": "SELL",
+          "price": 1275.9,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.6x + Candle 0.26% | MACD bearish (-0.26<0.42)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.167454",
+          "type": "BUY",
+          "price": 1274.2,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.3x + Candle 0.16% | MACD bearish (-0.18<0.59) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.167454",
+          "type": "SELL",
+          "price": 1274.2,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.3x + Candle 0.16% | MACD bearish (-0.18<0.59) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.167454",
+          "type": "BUY",
+          "price": 1275.2,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.3x + Candle 0.16% | MACD bearish (0.10<0.78) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.168467",
+          "type": "SELL",
+          "price": 1275.2,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.3x + Candle 0.16% | MACD bearish (0.10<0.78) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "ASIANPAINT.NS",
+      "total_signals": 10,
+      "buy_signals": 5,
+      "sell_signals": 5,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:15.464284",
+          "type": "BUY",
+          "price": 2795.0,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.0x + Candle 0.23% | MACD bearish (-4.15<-3.68)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.465296",
+          "type": "SELL",
+          "price": 2795.0,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.0x + Candle 0.23% | MACD bearish (-4.15<-3.68)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.465296",
+          "type": "BUY",
+          "price": 2791.9,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.3x + Candle 0.17% | MACD bearish (-4.19<-3.57) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.465296",
+          "type": "SELL",
+          "price": 2791.9,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.3x + Candle 0.17% | MACD bearish (-4.19<-3.57) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.466308",
+          "type": "BUY",
+          "price": 2793.4,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.8x + Candle 0.22% | MACD bearish (-3.86<-3.41) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.466308",
+          "type": "SELL",
+          "price": 2793.4,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.8x + Candle 0.22% | MACD bearish (-3.86<-3.41) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.467353",
+          "type": "BUY",
+          "price": 2796.4,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.9x + Candle 0.22% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.467353",
+          "type": "SELL",
+          "price": 2796.4,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.9x + Candle 0.22% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.467353",
+          "type": "BUY",
+          "price": 2802.3,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.0x + Candle 0.15% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.468364",
+          "type": "SELL",
+          "price": 2802.3,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.0x + Candle 0.15% | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "MARUTI.NS",
+      "total_signals": 4,
+      "buy_signals": 2,
+      "sell_signals": 2,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:15.805505",
+          "type": "BUY",
+          "price": 15991.0,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.2x + Candle 0.28% | MACD bearish (-30.89<-26.14) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.805505",
+          "type": "SELL",
+          "price": 15991.0,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.2x + Candle 0.28% | MACD bearish (-30.89<-26.14) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.805505",
+          "type": "BUY",
+          "price": 16030.0,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.5x + Candle 0.24% | MACD bearish (-26.27<-17.29) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:15.805505",
+          "type": "SELL",
+          "price": 16030.0,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.5x + Candle 0.24% | MACD bearish (-26.27<-17.29) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "HCLTECH.NS",
+      "total_signals": 2,
+      "buy_signals": 1,
+      "sell_signals": 1,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:16.117879",
+          "type": "BUY",
+          "price": 1657.1,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.1x + Candle 0.19% | MACD bearish (-3.12<-2.35) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:16.117879",
+          "type": "SELL",
+          "price": 1657.1,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.1x + Candle 0.19% | MACD bearish (-3.12<-2.35) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "BAJFINANCE.NS",
+      "total_signals": 6,
+      "buy_signals": 3,
+      "sell_signals": 3,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:16.425891",
+          "type": "BUY",
+          "price": 1017.5,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.6x + Candle 0.20% | MACD bearish (-1.02<-0.97) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:16.425891",
+          "type": "SELL",
+          "price": 1017.5,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.6x + Candle 0.20% | MACD bearish (-1.02<-0.97) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:16.426905",
+          "type": "BUY",
+          "price": 1017.7,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.2x + Candle 0.20% | MACD bearish (-1.12<-0.95)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:16.426905",
+          "type": "SELL",
+          "price": 1017.7,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.2x + Candle 0.20% | MACD bearish (-1.12<-0.95)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:16.427913",
+          "type": "BUY",
+          "price": 1017.4,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.0x + Candle 0.16% | MACD bearish (-1.07<-0.64)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:16.427913",
+          "type": "SELL",
+          "price": 1017.4,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.0x + Candle 0.16% | MACD bearish (-1.07<-0.64)"
+        }
+      ]
+    },
+    {
+      "symbol": "TITAN.NS",
+      "total_signals": 4,
+      "buy_signals": 2,
+      "sell_signals": 2,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:16.753896",
+          "type": "BUY",
+          "price": 3840.1,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.5x + Candle 0.25% | MACD bearish (-1.88<0.83) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:16.753896",
+          "type": "SELL",
+          "price": 3840.1,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.5x + Candle 0.25% | MACD bearish (-1.88<0.83) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:16.754935",
+          "type": "BUY",
+          "price": 3847.0,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 2.7x + Candle 0.16% | RSI oversold (23.3)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:16.754935",
+          "type": "SELL",
+          "price": 3847.0,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 2.7x + Candle 0.16% | RSI oversold (23.3)"
+        }
+      ]
+    },
+    {
+      "symbol": "SUNPHARMA.NS",
+      "total_signals": 6,
+      "buy_signals": 3,
+      "sell_signals": 3,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:17.071462",
+          "type": "BUY",
+          "price": 1774.2,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.7x + Candle 0.19% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.071462",
+          "type": "SELL",
+          "price": 1774.2,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.7x + Candle 0.19% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.071462",
+          "type": "BUY",
+          "price": 1775.3,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.5x + Candle 0.17% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.071462",
+          "type": "SELL",
+          "price": 1775.3,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.5x + Candle 0.17% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.071462",
+          "type": "BUY",
+          "price": 1776.9,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.6x + Candle 0.22% | MACD bearish (-4.13<-4.00)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.071462",
+          "type": "SELL",
+          "price": 1776.9,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.6x + Candle 0.22% | MACD bearish (-4.13<-4.00)"
+        }
+      ]
+    },
+    {
+      "symbol": "ULTRACEMCO.NS",
+      "total_signals": 6,
+      "buy_signals": 3,
+      "sell_signals": 3,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:17.397341",
+          "type": "BUY",
+          "price": 11420.0,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.5x + Candle 0.17% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.397341",
+          "type": "SELL",
+          "price": 11420.0,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.5x + Candle 0.17% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.398365",
+          "type": "BUY",
+          "price": 11423.0,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 6.6x + Candle 0.19% | MACD bearish (-15.77<-13.27)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.398365",
+          "type": "SELL",
+          "price": 11423.0,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 6.6x + Candle 0.19% | MACD bearish (-15.77<-13.27)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.399381",
+          "type": "BUY",
+          "price": 11400.0,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 6.7x + Candle 0.18% | MACD bearish (-17.82<-11.48) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.400424",
+          "type": "SELL",
+          "price": 11400.0,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 6.7x + Candle 0.18% | MACD bearish (-17.82<-11.48) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "NESTLEIND.NS",
+      "total_signals": 6,
+      "buy_signals": 3,
+      "sell_signals": 3,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:17.711377",
+          "type": "BUY",
+          "price": 1216.0,
+          "strength": 0.625,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 2.0x + Candle 0.49% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.711377",
+          "type": "SELL",
+          "price": 1216.0,
+          "strength": 0.375,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 2.0x + Candle 0.49% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.712385",
+          "type": "BUY",
+          "price": 1214.6,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.6x + Candle 0.21% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.712385",
+          "type": "SELL",
+          "price": 1214.6,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.6x + Candle 0.21% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.713399",
+          "type": "BUY",
+          "price": 1217.3,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 3.3x + Candle 0.28% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:17.713399",
+          "type": "SELL",
+          "price": 1217.3,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 3.3x + Candle 0.28% | Bullish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "WIPRO.NS",
+      "total_signals": 4,
+      "buy_signals": 2,
+      "sell_signals": 2,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:18.022586",
+          "type": "BUY",
+          "price": 257.39,
+          "strength": 0.5,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 1.7x + Candle 0.19% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.023836",
+          "type": "SELL",
+          "price": 257.39,
+          "strength": 0.5,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 1.7x + Candle 0.19% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.024840",
+          "type": "BUY",
+          "price": 257.57,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 4.4x + Candle 0.15% | MACD bearish (-0.21<-0.21) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.024840",
+          "type": "SELL",
+          "price": 257.57,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 4.4x + Candle 0.15% | MACD bearish (-0.21<-0.21) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "ONGC.NS",
+      "total_signals": 4,
+      "buy_signals": 2,
+      "sell_signals": 2,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:18.330333",
+          "type": "BUY",
+          "price": 239.73,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 12.8x + Candle 0.23% | MACD bullish (0.01>-0.00) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.330333",
+          "type": "SELL",
+          "price": 239.73,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 12.8x + Candle 0.23% | MACD bullish (0.01>-0.00) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.330333",
+          "type": "BUY",
+          "price": 239.66,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 5.1x + Candle 0.22% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.330333",
+          "type": "SELL",
+          "price": 239.66,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 5.1x + Candle 0.22% | Bullish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "NTPC.NS",
+      "total_signals": 8,
+      "buy_signals": 4,
+      "sell_signals": 4,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:18.650158",
+          "type": "BUY",
+          "price": 319.7,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 2.0x + Candle 0.28% | MACD bullish (-0.04>-0.10)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.650158",
+          "type": "SELL",
+          "price": 319.7,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 2.0x + Candle 0.28% | MACD bullish (-0.04>-0.10)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.650158",
+          "type": "BUY",
+          "price": 320.0,
+          "strength": 0.5,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 2.9x + Candle 0.17% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.650158",
+          "type": "SELL",
+          "price": 320.0,
+          "strength": 0.375,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 2.9x + Candle 0.17% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.650158",
+          "type": "BUY",
+          "price": 320.0,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 3.0x + Candle 0.41% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.650158",
+          "type": "SELL",
+          "price": 320.0,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 3.0x + Candle 0.41% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.650158",
+          "type": "BUY",
+          "price": 318.7,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.3x + Candle 0.16% | MACD bearish (-0.32<-0.11)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.650158",
+          "type": "SELL",
+          "price": 318.7,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.3x + Candle 0.16% | MACD bearish (-0.32<-0.11)"
+        }
+      ]
+    },
+    {
+      "symbol": "POWERGRID.NS",
+      "total_signals": 8,
+      "buy_signals": 4,
+      "sell_signals": 4,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:18.951948",
+          "type": "BUY",
+          "price": 264.4,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.5x + Candle 0.32% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.951948",
+          "type": "SELL",
+          "price": 264.4,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.5x + Candle 0.32% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.967546",
+          "type": "BUY",
+          "price": 265.0,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.5x + Candle 0.28% | MACD bullish (-0.04>-0.20) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.967546",
+          "type": "SELL",
+          "price": 265.0,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.5x + Candle 0.28% | MACD bullish (-0.04>-0.20) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.967546",
+          "type": "BUY",
+          "price": 264.5,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 3.7x + Candle 0.17% | MACD bullish (-0.17>-0.26) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.967546",
+          "type": "SELL",
+          "price": 264.5,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 3.7x + Candle 0.17% | MACD bullish (-0.17>-0.26) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.967546",
+          "type": "BUY",
+          "price": 264.45,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 4.4x + Candle 0.28% | MACD bullish (-0.24>-0.29) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:18.967546",
+          "type": "SELL",
+          "price": 264.45,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 4.4x + Candle 0.28% | MACD bullish (-0.24>-0.29) | Bullish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "TECHM.NS",
+      "total_signals": 6,
+      "buy_signals": 3,
+      "sell_signals": 3,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:19.273429",
+          "type": "BUY",
+          "price": 1560.1,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.9x + Candle 0.17% | MACD bearish (-1.96<-1.94) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.273429",
+          "type": "SELL",
+          "price": 1560.1,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.9x + Candle 0.17% | MACD bearish (-1.96<-1.94) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.273429",
+          "type": "BUY",
+          "price": 1561.7,
+          "strength": 0.625,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 2.8x + Candle 0.17% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.273429",
+          "type": "SELL",
+          "price": 1561.7,
+          "strength": 0.5,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 2.8x + Candle 0.17% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.273429",
+          "type": "BUY",
+          "price": 1562.1,
+          "strength": 0.375,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 4.3x + Candle 0.22% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.273429",
+          "type": "SELL",
+          "price": 1562.1,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 4.3x + Candle 0.22% | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "M&M.NS",
+      "total_signals": 18,
+      "buy_signals": 9,
+      "sell_signals": 9,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:19.589075",
+          "type": "BUY",
+          "price": 3648.4,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 1.3x + Candle 0.37% | MACD bullish (1.70>-1.28) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.589075",
+          "type": "SELL",
+          "price": 3648.4,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 1.3x + Candle 0.37% | MACD bullish (1.70>-1.28) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.589075",
+          "type": "BUY",
+          "price": 3646.8,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.3x + Candle 0.36% | MACD bullish (0.45>-2.02) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.589075",
+          "type": "SELL",
+          "price": 3646.8,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.3x + Candle 0.36% | MACD bullish (0.45>-2.02) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.589075",
+          "type": "BUY",
+          "price": 3641.3,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 3.3x + Candle 0.26% | MACD bullish (-1.00>-2.64) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.589075",
+          "type": "SELL",
+          "price": 3641.3,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 3.3x + Candle 0.26% | MACD bullish (-1.00>-2.64) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.589075",
+          "type": "BUY",
+          "price": 3634.2,
+          "strength": 0.625,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 2.6x + Candle 0.23% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.589075",
+          "type": "SELL",
+          "price": 3634.2,
+          "strength": 0.375,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 2.6x + Candle 0.23% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.589075",
+          "type": "BUY",
+          "price": 3631.0,
+          "strength": 0.625,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 3.3x + Candle 0.16% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.589075",
+          "type": "SELL",
+          "price": 3631.0,
+          "strength": 0.375,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 3.3x + Candle 0.16% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.604680",
+          "type": "BUY",
+          "price": 3630.7,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 4.9x + Candle 0.41% | MACD bearish (-3.87<-3.27)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.604680",
+          "type": "SELL",
+          "price": 3630.7,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 4.9x + Candle 0.41% | MACD bearish (-3.87<-3.27)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.604680",
+          "type": "BUY",
+          "price": 3619.4,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.3x + Candle 0.27% | MACD bearish (-4.72<-3.12)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.604680",
+          "type": "SELL",
+          "price": 3619.4,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.3x + Candle 0.27% | MACD bearish (-4.72<-3.12)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.604680",
+          "type": "BUY",
+          "price": 3613.6,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.4x + Candle 0.15% | MACD bearish (-4.58<-2.72) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.604680",
+          "type": "SELL",
+          "price": 3613.6,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.4x + Candle 0.15% | MACD bearish (-4.58<-2.72) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.604680",
+          "type": "BUY",
+          "price": 3618.1,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.5x + Candle 0.21% | MACD bearish (-3.75<-2.26) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:19.604680",
+          "type": "SELL",
+          "price": 3618.1,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.5x + Candle 0.21% | MACD bearish (-3.75<-2.26) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "TATAMOTORS.NS",
+      "total_signals": 0,
+      "buy_signals": 0,
+      "sell_signals": 0,
+      "data_points": 0,
+      "date_range": "No data",
+      "signals_detail": [],
+      "error": "No data available"
+    },
+    {
+      "symbol": "TATASTEEL.NS",
+      "total_signals": 8,
+      "buy_signals": 4,
+      "sell_signals": 4,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:20.032739",
+          "type": "BUY",
+          "price": 160.99,
+          "strength": 0.625,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 2.8x + Candle 0.32% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.032739",
+          "type": "SELL",
+          "price": 160.99,
+          "strength": 0.375,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 2.8x + Candle 0.32% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.032739",
+          "type": "BUY",
+          "price": 160.6,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.4x + Candle 0.16% | MACD bearish (-0.39<-0.28)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.032739",
+          "type": "SELL",
+          "price": 160.6,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.4x + Candle 0.16% | MACD bearish (-0.39<-0.28)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.032739",
+          "type": "BUY",
+          "price": 160.38,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.3x + Candle 0.21% | MACD bearish (-0.40<-0.25)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.032739",
+          "type": "SELL",
+          "price": 160.38,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.3x + Candle 0.21% | MACD bearish (-0.40<-0.25)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.032739",
+          "type": "BUY",
+          "price": 160.24,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.8x + Candle 0.47% | MACD bearish (-0.33<-0.17) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.032739",
+          "type": "SELL",
+          "price": 160.24,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.8x + Candle 0.47% | MACD bearish (-0.33<-0.17) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "INDUSINDBK.NS",
+      "total_signals": 10,
+      "buy_signals": 5,
+      "sell_signals": 5,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:20.338265",
+          "type": "BUY",
+          "price": 845.3,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.1x + Candle 0.24% | MACD bullish (-0.06>-0.13) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.338265",
+          "type": "SELL",
+          "price": 845.3,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.1x + Candle 0.24% | MACD bullish (-0.06>-0.13) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.338265",
+          "type": "BUY",
+          "price": 844.75,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 4.6x + Candle 0.20% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.338265",
+          "type": "SELL",
+          "price": 844.75,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 4.6x + Candle 0.20% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.338265",
+          "type": "BUY",
+          "price": 843.65,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 7.3x + Candle 0.21% | MACD bearish (-0.48<-0.00)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.338265",
+          "type": "SELL",
+          "price": 843.65,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 7.3x + Candle 0.21% | MACD bearish (-0.48<-0.00)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.338265",
+          "type": "BUY",
+          "price": 841.8,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.4x + Candle 0.17% | MACD bearish (-0.49<0.11)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.338265",
+          "type": "SELL",
+          "price": 841.8,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.4x + Candle 0.17% | MACD bearish (-0.49<0.11)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.338265",
+          "type": "BUY",
+          "price": 841.55,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.8x + Candle 0.17% | MACD bearish (-0.32<0.27) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.338265",
+          "type": "SELL",
+          "price": 841.55,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.8x + Candle 0.17% | MACD bearish (-0.32<0.27) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "BAJAJFINSV.NS",
+      "total_signals": 6,
+      "buy_signals": 3,
+      "sell_signals": 3,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:20.657208",
+          "type": "BUY",
+          "price": 2065.5,
+          "strength": 0.375,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.7x + Candle 0.33% | MACD bearish (-0.92<-0.56)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.657208",
+          "type": "SELL",
+          "price": 2065.5,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.7x + Candle 0.33% | MACD bearish (-0.92<-0.56)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.657208",
+          "type": "BUY",
+          "price": 2064.9,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.6x + Candle 0.31% | MACD bearish (-0.67<-0.47) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.657208",
+          "type": "SELL",
+          "price": 2064.9,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.6x + Candle 0.31% | MACD bearish (-0.67<-0.47) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.657208",
+          "type": "BUY",
+          "price": 2072.8,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 4.0x + Candle 0.27% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.657208",
+          "type": "SELL",
+          "price": 2072.8,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 4.0x + Candle 0.27% | Bullish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "ADANIENT.NS",
+      "total_signals": 12,
+      "buy_signals": 6,
+      "sell_signals": 6,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:20.962139",
+          "type": "BUY",
+          "price": 2250.0,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 1.3x + Candle 0.47% | MACD bullish (1.40>-0.11)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.962139",
+          "type": "SELL",
+          "price": 2250.0,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 1.3x + Candle 0.47% | MACD bullish (1.40>-0.11)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.962139",
+          "type": "BUY",
+          "price": 2253.3,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.2x + Candle 0.33% | MACD bullish (0.75>-0.49) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.962139",
+          "type": "SELL",
+          "price": 2253.3,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.2x + Candle 0.33% | MACD bullish (0.75>-0.49) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.962139",
+          "type": "BUY",
+          "price": 2249.0,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 3.2x + Candle 0.48% | MACD bullish (-0.43>-0.80) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.962139",
+          "type": "SELL",
+          "price": 2249.0,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 3.2x + Candle 0.48% | MACD bullish (-0.43>-0.80) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.962139",
+          "type": "BUY",
+          "price": 2242.1,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 1.9x + Candle 0.30% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.977741",
+          "type": "SELL",
+          "price": 2242.1,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 1.9x + Candle 0.30% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.977741",
+          "type": "BUY",
+          "price": 2238.1,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 2.3x + Candle 0.43% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.977741",
+          "type": "SELL",
+          "price": 2238.1,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 2.3x + Candle 0.43% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.977741",
+          "type": "BUY",
+          "price": 2236.0,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 1.9x + Candle 0.30% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:20.977741",
+          "type": "SELL",
+          "price": 2236.0,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 1.9x + Candle 0.30% | Bullish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "COALINDIA.NS",
+      "total_signals": 8,
+      "buy_signals": 4,
+      "sell_signals": 4,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:21.290188",
+          "type": "BUY",
+          "price": 378.85,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.2x + Candle 0.21% | MACD bearish (-0.15<-0.04) | Near VWAP (\u00b10.12%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.290188",
+          "type": "SELL",
+          "price": 378.85,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.2x + Candle 0.21% | MACD bearish (-0.15<-0.04) | Near VWAP (\u00b10.12%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.290188",
+          "type": "BUY",
+          "price": 378.75,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 6/8]: DOWNTREND + Vol 2.0x + Candle 0.16% | MACD bearish (-0.11<-0.02) | Near VWAP (\u00b10.15%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.290188",
+          "type": "SELL",
+          "price": 378.75,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 6/8]: DOWNTREND + Vol 2.0x + Candle 0.16% | MACD bearish (-0.11<-0.02) | Near VWAP (\u00b10.15%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.290188",
+          "type": "BUY",
+          "price": 379.05,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 6/8]: DOWNTREND + Vol 1.9x + Candle 0.22% | MACD bearish (-0.05<0.01) | Near VWAP (\u00b10.07%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.290188",
+          "type": "SELL",
+          "price": 379.05,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 6/8]: DOWNTREND + Vol 1.9x + Candle 0.22% | MACD bearish (-0.05<0.01) | Near VWAP (\u00b10.07%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.290188",
+          "type": "BUY",
+          "price": 380.0,
+          "strength": 0.5,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.8x + Candle 0.17% | Near VWAP (\u00b10.18%) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.294201",
+          "type": "SELL",
+          "price": 380.0,
+          "strength": 0.375,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.8x + Candle 0.17% | Near VWAP (\u00b10.18%) | Bullish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "DRREDDY.NS",
+      "total_signals": 14,
+      "buy_signals": 7,
+      "sell_signals": 7,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:21.617411",
+          "type": "BUY",
+          "price": 1248.1,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.5x + Candle 0.36% | Near VWAP (\u00b10.11%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.617411",
+          "type": "SELL",
+          "price": 1248.1,
+          "strength": 0.375,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.5x + Candle 0.36% | Near VWAP (\u00b10.11%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.617411",
+          "type": "BUY",
+          "price": 1244.0,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.5x + Candle 0.28% | MACD bearish (-2.75<-2.74) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.617411",
+          "type": "SELL",
+          "price": 1244.0,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.5x + Candle 0.28% | MACD bearish (-2.75<-2.74) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.617411",
+          "type": "BUY",
+          "price": 1246.9,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.3x + Candle 0.19% | Near VWAP (\u00b10.02%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.617411",
+          "type": "SELL",
+          "price": 1246.9,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.3x + Candle 0.19% | Near VWAP (\u00b10.02%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.617411",
+          "type": "BUY",
+          "price": 1248.0,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 6/8]: DOWNTREND + Vol 2.5x + Candle 0.22% | MACD bearish (-2.76<-2.76) | Near VWAP (\u00b10.11%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.617411",
+          "type": "SELL",
+          "price": 1248.0,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 6/8]: DOWNTREND + Vol 2.5x + Candle 0.22% | MACD bearish (-2.76<-2.76) | Near VWAP (\u00b10.11%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.617411",
+          "type": "BUY",
+          "price": 1248.1,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.4x + Candle 0.30% | MACD bearish (-3.24<-2.70) | Near VWAP (\u00b10.11%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.617411",
+          "type": "SELL",
+          "price": 1248.1,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.4x + Candle 0.30% | MACD bearish (-3.24<-2.70) | Near VWAP (\u00b10.11%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.617411",
+          "type": "BUY",
+          "price": 1244.7,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.4x + Candle 0.34% | MACD bearish (-3.52<-2.57) | Near VWAP (\u00b10.16%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.617411",
+          "type": "SELL",
+          "price": 1244.7,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.4x + Candle 0.34% | MACD bearish (-3.52<-2.57) | Near VWAP (\u00b10.16%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.617411",
+          "type": "BUY",
+          "price": 1243.9,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.3x + Candle 0.20% | MACD bearish (-3.16<-2.04) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.617411",
+          "type": "SELL",
+          "price": 1243.9,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.3x + Candle 0.20% | MACD bearish (-3.16<-2.04) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "GRASIM.NS",
+      "total_signals": 6,
+      "buy_signals": 3,
+      "sell_signals": 3,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:21.945609",
+          "type": "BUY",
+          "price": 2748.8,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.4x + Candle 0.35% | MACD bearish (-4.02<-3.82) | Near VWAP (\u00b10.12%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.945609",
+          "type": "SELL",
+          "price": 2748.8,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.4x + Candle 0.35% | MACD bearish (-4.02<-3.82) | Near VWAP (\u00b10.12%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.945609",
+          "type": "BUY",
+          "price": 2745.2,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 6/8]: DOWNTREND + Vol 3.4x + Candle 0.15% | MACD bearish (-4.28<-3.63) | Near VWAP (\u00b10.01%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.945609",
+          "type": "SELL",
+          "price": 2745.2,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 6/8]: DOWNTREND + Vol 3.4x + Candle 0.15% | MACD bearish (-4.28<-3.63) | Near VWAP (\u00b10.01%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.945609",
+          "type": "BUY",
+          "price": 2747.9,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 4.1x + Candle 0.23% | MACD bearish (-4.27<-3.07) | Near VWAP (\u00b10.09%)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:21.945609",
+          "type": "SELL",
+          "price": 2747.9,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 4.1x + Candle 0.23% | MACD bearish (-4.27<-3.07) | Near VWAP (\u00b10.09%)"
+        }
+      ]
+    },
+    {
+      "symbol": "HINDALCO.NS",
+      "total_signals": 10,
+      "buy_signals": 5,
+      "sell_signals": 5,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:22.259659",
+          "type": "BUY",
+          "price": 812.5,
+          "strength": 0.375,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.5x + Candle 0.18% | MACD bearish (-0.45<-0.42)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.259659",
+          "type": "SELL",
+          "price": 812.5,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.5x + Candle 0.18% | MACD bearish (-0.45<-0.42)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.259659",
+          "type": "BUY",
+          "price": 812.15,
+          "strength": 0.375,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.3x + Candle 0.18% | MACD bearish (-0.45<-0.41)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.259659",
+          "type": "SELL",
+          "price": 812.15,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.3x + Candle 0.18% | MACD bearish (-0.45<-0.41)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.259659",
+          "type": "BUY",
+          "price": 811.85,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.2x + Candle 0.25% | MACD bearish (-0.40<-0.40) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.259659",
+          "type": "SELL",
+          "price": 811.85,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.2x + Candle 0.25% | MACD bearish (-0.40<-0.40) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.259659",
+          "type": "BUY",
+          "price": 813.95,
+          "strength": 0.375,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 4.0x + Candle 0.17% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.266275",
+          "type": "SELL",
+          "price": 813.95,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 4.0x + Candle 0.17% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.266275",
+          "type": "BUY",
+          "price": 814.3,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 4.9x + Candle 0.19% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.266275",
+          "type": "SELL",
+          "price": 814.3,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 4.9x + Candle 0.19% | Bullish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "DIVISLAB.NS",
+      "total_signals": 12,
+      "buy_signals": 6,
+      "sell_signals": 6,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:22.578777",
+          "type": "BUY",
+          "price": 6272.0,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.5x + Candle 0.58% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.578777",
+          "type": "SELL",
+          "price": 6272.0,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.5x + Candle 0.58% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.579778",
+          "type": "BUY",
+          "price": 6297.5,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 3.6x + Candle 0.17% | MACD bullish (0.02>-2.14) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.579778",
+          "type": "SELL",
+          "price": 6297.5,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 3.6x + Candle 0.17% | MACD bullish (0.02>-2.14) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.580801",
+          "type": "BUY",
+          "price": 6292.5,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 4.2x + Candle 0.15% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.580801",
+          "type": "SELL",
+          "price": 6292.5,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 4.2x + Candle 0.15% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.581777",
+          "type": "BUY",
+          "price": 6296.5,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 4.7x + Candle 0.18% | MACD bullish (-2.15>-3.66)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.581777",
+          "type": "SELL",
+          "price": 6296.5,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 4.7x + Candle 0.18% | MACD bullish (-2.15>-3.66)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.582777",
+          "type": "BUY",
+          "price": 6300.0,
+          "strength": 0.75,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 6.4x + Candle 0.33% | MACD bullish (-3.34>-4.03) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.582777",
+          "type": "SELL",
+          "price": 6300.0,
+          "strength": 0.25,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 6.4x + Candle 0.33% | MACD bullish (-3.34>-4.03) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.583776",
+          "type": "BUY",
+          "price": 6276.0,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.9x + Candle 0.18% | MACD bearish (-4.43<-3.66) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.583776",
+          "type": "SELL",
+          "price": 6276.0,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.9x + Candle 0.18% | MACD bearish (-4.43<-3.66) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "CIPLA.NS",
+      "total_signals": 2,
+      "buy_signals": 1,
+      "sell_signals": 1,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:22.887466",
+          "type": "BUY",
+          "price": 1493.0,
+          "strength": 0.625,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 1.3x + Candle 0.22% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:22.887466",
+          "type": "SELL",
+          "price": 1493.0,
+          "strength": 0.375,
+          "reason": "SELL [VALID 3/8]: DOWNTREND + Vol 1.3x + Candle 0.22% | no boosters"
+        }
+      ]
+    },
+    {
+      "symbol": "EICHERMOT.NS",
+      "total_signals": 8,
+      "buy_signals": 4,
+      "sell_signals": 4,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:23.192451",
+          "type": "BUY",
+          "price": 7123.5,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.0x + Candle 0.45% | MACD bearish (-10.37<-7.08)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.192451",
+          "type": "SELL",
+          "price": 7123.5,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.0x + Candle 0.45% | MACD bearish (-10.37<-7.08)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.192451",
+          "type": "BUY",
+          "price": 7113.5,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.1x + Candle 0.20% | MACD bearish (-10.19<-6.26) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.192451",
+          "type": "SELL",
+          "price": 7113.5,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.1x + Candle 0.20% | MACD bearish (-10.19<-6.26) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.192451",
+          "type": "BUY",
+          "price": 7130.0,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.6x + Candle 0.20% | MACD bearish (-5.76<-2.67) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.192451",
+          "type": "SELL",
+          "price": 7130.0,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.6x + Candle 0.20% | MACD bearish (-5.76<-2.67) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.208121",
+          "type": "BUY",
+          "price": 7147.5,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.9x + Candle 0.21% | MACD bearish (-3.78<-1.28) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.208121",
+          "type": "SELL",
+          "price": 7147.5,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.9x + Candle 0.21% | MACD bearish (-3.78<-1.28) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "SHREECEM.NS",
+      "total_signals": 12,
+      "buy_signals": 6,
+      "sell_signals": 6,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:23.520836",
+          "type": "BUY",
+          "price": 26000.0,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.7x + Candle 0.42% | MACD bearish (-16.44<-5.17) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.520836",
+          "type": "SELL",
+          "price": 26000.0,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.7x + Candle 0.42% | MACD bearish (-16.44<-5.17) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.520836",
+          "type": "BUY",
+          "price": 26065.0,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.5x + Candle 0.19% | MACD bearish (-9.46<-2.36) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.520836",
+          "type": "SELL",
+          "price": 26065.0,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.5x + Candle 0.19% | MACD bearish (-9.46<-2.36) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.520836",
+          "type": "BUY",
+          "price": 26095.0,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 7.4x + Candle 0.15% | MACD bearish (-7.04<-0.58) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.520836",
+          "type": "SELL",
+          "price": 26095.0,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 7.4x + Candle 0.15% | MACD bearish (-7.04<-0.58) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.520836",
+          "type": "BUY",
+          "price": 26100.0,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 4.4x + Candle 0.15% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.520836",
+          "type": "SELL",
+          "price": 26100.0,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 4.4x + Candle 0.15% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.520836",
+          "type": "BUY",
+          "price": 26085.0,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 8.6x + Candle 0.25% | MACD bearish (-6.81<5.55)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.520836",
+          "type": "SELL",
+          "price": 26085.0,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 8.6x + Candle 0.25% | MACD bearish (-6.81<5.55)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.520836",
+          "type": "BUY",
+          "price": 26060.0,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.8x + Candle 0.23% | MACD bearish (-5.28<8.64) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.535845",
+          "type": "SELL",
+          "price": 26060.0,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.8x + Candle 0.23% | MACD bearish (-5.28<8.64) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "APOLLOHOSP.NS",
+      "total_signals": 4,
+      "buy_signals": 2,
+      "sell_signals": 2,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:23.841924",
+          "type": "BUY",
+          "price": 7100.0,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 2.5x + Candle 0.29% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.841924",
+          "type": "SELL",
+          "price": 7100.0,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 2.5x + Candle 0.29% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.841924",
+          "type": "BUY",
+          "price": 7098.5,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.1x + Candle 0.18% | MACD bearish (-4.90<-2.54)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:23.841924",
+          "type": "SELL",
+          "price": 7098.5,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.1x + Candle 0.18% | MACD bearish (-4.90<-2.54)"
+        }
+      ]
+    },
+    {
+      "symbol": "BPCL.NS",
+      "total_signals": 2,
+      "buy_signals": 1,
+      "sell_signals": 1,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:24.136591",
+          "type": "BUY",
+          "price": 354.9,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.8x + Candle 0.24% | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.136591",
+          "type": "SELL",
+          "price": 354.9,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.8x + Candle 0.24% | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "JSWSTEEL.NS",
+      "total_signals": 10,
+      "buy_signals": 5,
+      "sell_signals": 5,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:24.442251",
+          "type": "BUY",
+          "price": 1105.2,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.5x + Candle 0.24% | MACD bearish (-1.63<-1.21)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.442251",
+          "type": "SELL",
+          "price": 1105.2,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.5x + Candle 0.24% | MACD bearish (-1.63<-1.21)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.442251",
+          "type": "BUY",
+          "price": 1104.0,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.7x + Candle 0.25% | MACD bearish (-1.49<-1.11) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.442251",
+          "type": "SELL",
+          "price": 1104.0,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.7x + Candle 0.25% | MACD bearish (-1.49<-1.11) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.442251",
+          "type": "BUY",
+          "price": 1106.7,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.0x + Candle 0.25% | MACD bearish (-1.16<-1.01) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.442251",
+          "type": "SELL",
+          "price": 1106.7,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.0x + Candle 0.25% | MACD bearish (-1.16<-1.01) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.442251",
+          "type": "BUY",
+          "price": 1109.6,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.6x + Candle 0.18% | MACD bearish (-1.02<-0.97) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.442251",
+          "type": "SELL",
+          "price": 1109.6,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.6x + Candle 0.18% | MACD bearish (-1.02<-0.97) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.442251",
+          "type": "BUY",
+          "price": 1110.9,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.8x + Candle 0.16% | MACD bearish (-1.09<-0.96)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.450975",
+          "type": "SELL",
+          "price": 1110.9,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.8x + Candle 0.16% | MACD bearish (-1.09<-0.96)"
+        }
+      ]
+    },
+    {
+      "symbol": "HEROMOTOCO.NS",
+      "total_signals": 12,
+      "buy_signals": 6,
+      "sell_signals": 6,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:24.752885",
+          "type": "BUY",
+          "price": 5999.0,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.2x + Candle 0.30% | MACD bearish (-7.63<-7.58) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.752885",
+          "type": "SELL",
+          "price": 5999.0,
+          "strength": 0.75,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.2x + Candle 0.30% | MACD bearish (-7.63<-7.58) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.752885",
+          "type": "BUY",
+          "price": 6003.0,
+          "strength": 0.25,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.4x + Candle 0.17% | MACD bearish (-7.87<-7.56)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.752885",
+          "type": "SELL",
+          "price": 6003.0,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.4x + Candle 0.17% | MACD bearish (-7.87<-7.56)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.752885",
+          "type": "BUY",
+          "price": 6003.5,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.3x + Candle 0.19% | MACD bearish (-8.48<-7.49)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.752885",
+          "type": "SELL",
+          "price": 6003.5,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.3x + Candle 0.19% | MACD bearish (-8.48<-7.49)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.752885",
+          "type": "BUY",
+          "price": 6002.0,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.1x + Candle 0.17% | MACD bearish (-9.48<-6.75)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.752885",
+          "type": "SELL",
+          "price": 6002.0,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 2.1x + Candle 0.17% | MACD bearish (-9.48<-6.75)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.752885",
+          "type": "BUY",
+          "price": 5997.0,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.0x + Candle 0.22% | MACD bearish (-10.04<-6.07)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.752885",
+          "type": "SELL",
+          "price": 5997.0,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 3.0x + Candle 0.22% | MACD bearish (-10.04<-6.07)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.752885",
+          "type": "BUY",
+          "price": 5990.0,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.3x + Candle 0.27% | MACD bearish (-10.09<-5.08)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:24.752885",
+          "type": "SELL",
+          "price": 5990.0,
+          "strength": 0.625,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.3x + Candle 0.27% | MACD bearish (-10.09<-5.08)"
+        }
+      ]
+    },
+    {
+      "symbol": "BRITANNIA.NS",
+      "total_signals": 8,
+      "buy_signals": 4,
+      "sell_signals": 4,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:25.062273",
+          "type": "BUY",
+          "price": 5887.0,
+          "strength": 0.625,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.5x + Candle 0.32% | MACD bullish (7.73>7.00) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.063271",
+          "type": "SELL",
+          "price": 5887.0,
+          "strength": 0.5,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.5x + Candle 0.32% | MACD bullish (7.73>7.00) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.063271",
+          "type": "BUY",
+          "price": 5882.0,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 4.1x + Candle 0.20% | MACD bullish (7.72>6.43)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.064241",
+          "type": "SELL",
+          "price": 5882.0,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 4.1x + Candle 0.20% | MACD bullish (7.72>6.43)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.064241",
+          "type": "BUY",
+          "price": 5887.0,
+          "strength": 0.625,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 5.9x + Candle 0.31% | MACD bullish (6.44>5.75) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.065243",
+          "type": "SELL",
+          "price": 5887.0,
+          "strength": 0.5,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 5.9x + Candle 0.31% | MACD bullish (6.44>5.75) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.065243",
+          "type": "BUY",
+          "price": 5873.0,
+          "strength": 0.5,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 3.6x + Candle 0.16% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.065243",
+          "type": "SELL",
+          "price": 5873.0,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 3.6x + Candle 0.16% | Bullish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "TATACONSUM.NS",
+      "total_signals": 6,
+      "buy_signals": 3,
+      "sell_signals": 3,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:25.375390",
+          "type": "BUY",
+          "price": 1147.0,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 1.5x + Candle 0.33% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.375390",
+          "type": "SELL",
+          "price": 1147.0,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 1.5x + Candle 0.33% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.375390",
+          "type": "BUY",
+          "price": 1146.0,
+          "strength": 0.5,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 2.3x + Candle 0.20% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.375390",
+          "type": "SELL",
+          "price": 1146.0,
+          "strength": 0.5,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 2.3x + Candle 0.20% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.375390",
+          "type": "BUY",
+          "price": 1146.4,
+          "strength": 0.5,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 2.4x + Candle 0.18% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.375390",
+          "type": "SELL",
+          "price": 1146.4,
+          "strength": 0.5,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 2.4x + Candle 0.18% | no boosters"
+        }
+      ]
+    },
+    {
+      "symbol": "SBILIFE.NS",
+      "total_signals": 4,
+      "buy_signals": 2,
+      "sell_signals": 2,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:25.706000",
+          "type": "BUY",
+          "price": 2002.1,
+          "strength": 0.25,
+          "reason": "SELL [HIGH-PROB 6/8]: DOWNTREND + Vol 2.2x + Candle 0.31% | MACD bearish (1.08<1.12) | Near VWAP (\u00b10.05%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.706000",
+          "type": "SELL",
+          "price": 2002.1,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 6/8]: DOWNTREND + Vol 2.2x + Candle 0.31% | MACD bearish (1.08<1.12) | Near VWAP (\u00b10.05%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.707032",
+          "type": "BUY",
+          "price": 2003.1,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.5x + Candle 0.17% | Near VWAP (\u00b10.00%) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:25.707032",
+          "type": "SELL",
+          "price": 2003.1,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 2.5x + Candle 0.17% | Near VWAP (\u00b10.00%) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "ADANIPORTS.NS",
+      "total_signals": 12,
+      "buy_signals": 6,
+      "sell_signals": 6,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:26.001688",
+          "type": "BUY",
+          "price": 1496.7,
+          "strength": 0.5,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 1.4x + Candle 0.19% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.001688",
+          "type": "SELL",
+          "price": 1496.7,
+          "strength": 0.5,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 1.4x + Candle 0.19% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.001688",
+          "type": "BUY",
+          "price": 1497.4,
+          "strength": 0.5,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 1.6x + Candle 0.15% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.001688",
+          "type": "SELL",
+          "price": 1497.4,
+          "strength": 0.5,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 1.6x + Candle 0.15% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.001688",
+          "type": "BUY",
+          "price": 1498.6,
+          "strength": 0.5,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.3x + Candle 0.17% | Near VWAP (\u00b10.20%) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.001688",
+          "type": "SELL",
+          "price": 1498.6,
+          "strength": 0.375,
+          "reason": "BUY [HIGH-PROB 5/8]: UPTREND + Vol 2.3x + Candle 0.17% | Near VWAP (\u00b10.20%) | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.001688",
+          "type": "BUY",
+          "price": 1496.4,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 2.1x + Candle 0.18% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.001688",
+          "type": "SELL",
+          "price": 1496.4,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 2.1x + Candle 0.18% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.001688",
+          "type": "BUY",
+          "price": 1495.4,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 1.6x + Candle 0.24% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.012273",
+          "type": "SELL",
+          "price": 1495.4,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 1.6x + Candle 0.24% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.012273",
+          "type": "BUY",
+          "price": 1493.5,
+          "strength": 0.5,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 1.3x + Candle 0.23% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.012273",
+          "type": "SELL",
+          "price": 1493.5,
+          "strength": 0.5,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 1.3x + Candle 0.23% | no boosters"
+        }
+      ]
+    },
+    {
+      "symbol": "UPL.NS",
+      "total_signals": 14,
+      "buy_signals": 7,
+      "sell_signals": 7,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:26.322155",
+          "type": "BUY",
+          "price": 739.45,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.8x + Candle 0.60% | MACD bearish (-0.12<-0.02) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.323176",
+          "type": "SELL",
+          "price": 739.45,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.8x + Candle 0.60% | MACD bearish (-0.12<-0.02) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.323176",
+          "type": "BUY",
+          "price": 739.2,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.5x + Candle 0.16% | MACD bearish (-0.11<0.04) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.324153",
+          "type": "SELL",
+          "price": 739.2,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 3.5x + Candle 0.16% | MACD bearish (-0.11<0.04) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.324153",
+          "type": "BUY",
+          "price": 740.1,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 2.9x + Candle 0.32% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.324153",
+          "type": "SELL",
+          "price": 740.1,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 2.9x + Candle 0.32% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.325161",
+          "type": "BUY",
+          "price": 738.15,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 6.4x + Candle 0.50% | MACD bearish (-0.12<0.12) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.325161",
+          "type": "SELL",
+          "price": 738.15,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 6.4x + Candle 0.50% | MACD bearish (-0.12<0.12) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.326162",
+          "type": "BUY",
+          "price": 739.35,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.4x + Candle 0.21% | MACD bearish (0.01<0.21)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.326162",
+          "type": "SELL",
+          "price": 739.35,
+          "strength": 0.5,
+          "reason": "SELL [STRONG 4/8]: DOWNTREND + Vol 1.4x + Candle 0.21% | MACD bearish (0.01<0.21)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.327170",
+          "type": "BUY",
+          "price": 739.25,
+          "strength": 0.375,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.4x + Candle 0.19% | MACD bearish (0.07<0.27) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.328164",
+          "type": "SELL",
+          "price": 739.25,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.4x + Candle 0.19% | MACD bearish (0.07<0.27) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.328164",
+          "type": "BUY",
+          "price": 740.1,
+          "strength": 0.5,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 1.5x + Candle 0.18% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.329161",
+          "type": "SELL",
+          "price": 740.1,
+          "strength": 0.375,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 1.5x + Candle 0.18% | no boosters"
+        }
+      ]
+    },
+    {
+      "symbol": "BAJAJ-AUTO.NS",
+      "total_signals": 2,
+      "buy_signals": 1,
+      "sell_signals": 1,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:26.659403",
+          "type": "BUY",
+          "price": 8925.0,
+          "strength": 0.5,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.8x + Candle 0.51% | MACD bearish (-7.13<-2.94) | Bearish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.659403",
+          "type": "SELL",
+          "price": 8925.0,
+          "strength": 0.625,
+          "reason": "SELL [HIGH-PROB 5/8]: DOWNTREND + Vol 1.8x + Candle 0.51% | MACD bearish (-7.13<-2.94) | Bearish candle"
+        }
+      ]
+    },
+    {
+      "symbol": "HDFCLIFE.NS",
+      "total_signals": 6,
+      "buy_signals": 3,
+      "sell_signals": 3,
+      "data_points": 1650,
+      "date_range": "2025-11-10 to 2025-12-09",
+      "signals_detail": [
+        {
+          "timestamp": "2025-12-09 16:49:26.973910",
+          "type": "BUY",
+          "price": 762.8,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 2.2x + Candle 0.22% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.989513",
+          "type": "SELL",
+          "price": 762.8,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 2.2x + Candle 0.22% | Bullish candle"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.989513",
+          "type": "BUY",
+          "price": 761.2,
+          "strength": 0.5,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 2.3x + Candle 0.20% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.989513",
+          "type": "SELL",
+          "price": 761.2,
+          "strength": 0.5,
+          "reason": "BUY [VALID 3/8]: UPTREND + Vol 2.3x + Candle 0.20% | no boosters"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.989513",
+          "type": "BUY",
+          "price": 762.7,
+          "strength": 0.625,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 3.0x + Candle 0.24% | MACD bullish (1.12>1.09)"
+        },
+        {
+          "timestamp": "2025-12-09 16:49:26.989513",
+          "type": "SELL",
+          "price": 762.7,
+          "strength": 0.375,
+          "reason": "BUY [STRONG 4/8]: UPTREND + Vol 3.0x + Candle 0.24% | MACD bullish (1.12>1.09)"
+        }
+      ]
+    }
+  ]
+}

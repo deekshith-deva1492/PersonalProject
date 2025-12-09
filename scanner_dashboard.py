@@ -107,55 +107,36 @@ else:
 # Sidebar controls
 st.sidebar.header("Scanner Controls")
 
-# Scan button
-if st.sidebar.button("🔍 Scan All Symbols", use_container_width=True):
-    with st.spinner("Scanning all NIFTY 50 stocks..."):
-        signals = st.session_state.scanner.scan_all_symbols()
-        st.session_state.signals = signals
-        st.session_state.last_scan_time = datetime.now()
-        
-        # Send alerts if new signals found
-        if signals and len(signals) > st.session_state.previous_signal_count:
-            new_signals = signals[st.session_state.previous_signal_count:]
-            if len(new_signals) == 1:
-                st.session_state.alert_manager.send_signal_alert(new_signals[0])
-            else:
-                st.session_state.alert_manager.send_multiple_signals_alert(new_signals)
-        
-        st.session_state.previous_signal_count = len(signals)
-        st.sidebar.success(f"Found {len(signals)} signal(s)!")
+# Manual scan button REMOVED - WebSocket is always live streaming
+# No need for manual "Scan All Symbols" button anymore
+# Signals are detected automatically in real-time
 
-# Scan mode selector
+# Old HTTP polling scan button (removed):
+# if st.sidebar.button("🔍 Scan All Symbols", use_container_width=True):
+#     with st.spinner("Scanning all NIFTY 50 stocks..."):
+#         signals = st.session_state.scanner.scan_all_symbols()
+#         ...
+
+st.sidebar.info("🔴 **LIVE STREAMING**\n\nWebSocket automatically scans all 49 NIFTY 50 stocks in real-time. Signals appear instantly when conditions are met.")
+
+# WebSocket is the ONLY mode now - no mode selector
 st.sidebar.markdown("---")
-st.sidebar.subheader("⚡ Scan Mode")
-scan_mode = st.sidebar.radio(
-    "Select Mode:",
-    ["WebSocket Streaming (<1s)", "HTTP Polling (60s)"],  # WebSocket first (default)
-    help="WebSocket: Real-time tick updates (RECOMMENDED) | HTTP: Scans every 60 seconds (fallback)"
-)
+st.sidebar.subheader("⚡ Data Mode")
+st.sidebar.info("🔴 LIVE - WebSocket Streaming Active")
+st.sidebar.caption("Real-time tick updates (<1 second latency)")
 
-# Update scan mode in session state
-if scan_mode == "WebSocket Streaming (<1s)":
-    st.session_state.scan_mode = "WebSocket"
-else:
-    # HTTP Polling mode (fallback)
-    st.session_state.scan_mode = "HTTP"
-    # Stop WebSocket if running
-    if st.session_state.websocket_stream:
-        st.session_state.websocket_stream.stop()
-        st.session_state.websocket_stream = None
-        st.session_state.websocket_connected = False
+# Force WebSocket mode (no HTTP option)
+st.session_state.scan_mode = "WebSocket"
+auto_scan = False  # No auto-scan needed - WebSocket is always live
 
-# Auto-scan toggle (for HTTP mode only)
-st.sidebar.markdown("---")
-if st.session_state.scan_mode == "HTTP":
-    auto_scan = st.sidebar.checkbox("Enable Auto-Scan (every 60s)")
-else:
-    auto_scan = False
-    st.sidebar.info("🔴 LIVE - WebSocket streaming active")
-
-if auto_scan and not st.session_state.scanner_running:
-    st.session_state.scanner_running = True
+# HTTP Polling mode REMOVED - WebSocket only
+# Old HTTP polling code commented out below:
+# st.sidebar.markdown("---")
+# if st.session_state.scan_mode == "HTTP":
+#     auto_scan = st.sidebar.checkbox("Enable Auto-Scan (every 60s)")
+# else:
+#     auto_scan = False
+#     st.sidebar.info("🔴 LIVE - WebSocket streaming active")
 
 # Alert settings
 st.sidebar.markdown("---")
@@ -190,26 +171,16 @@ if st.session_state.scan_mode == "WebSocket":
             st.session_state.websocket_stream = None
             st.rerun()
 
-# Scanner statistics
+# Scanner statistics - WebSocket only
 st.sidebar.markdown("---")
 st.sidebar.subheader("Scanner Stats")
 
-if st.session_state.scan_mode == "HTTP":
-    stats = st.session_state.scanner.get_statistics()
-    st.sidebar.metric("Symbols", stats['symbols_count'])
-    st.sidebar.metric("Total Scans", stats['symbols_scanned'])
-    st.sidebar.metric("Signals Generated", stats['signals_generated'])
-    
-    if st.session_state.last_scan_time:
-        time_since = datetime.now() - st.session_state.last_scan_time
-        st.sidebar.metric("Last Scan", f"{int(time_since.total_seconds())}s ago")
-else:
-    # WebSocket mode stats
-    st.sidebar.metric("Mode", "WebSocket")
-    st.sidebar.metric("Symbols", "49 NIFTY 50")
-    st.sidebar.metric("Updates", "Real-Time")
-    if st.session_state.signals:
-        st.sidebar.metric("Active Signals", len(st.session_state.signals))
+# Only WebSocket stats (HTTP mode removed)
+st.sidebar.metric("Mode", "WebSocket Streaming")
+st.sidebar.metric("Symbols", "49 NIFTY 50")
+st.sidebar.metric("Updates", "Real-Time (<1s)")
+if st.session_state.signals:
+    st.sidebar.metric("Active Signals", len(st.session_state.signals))
 
 # Auto-trading controls
 st.sidebar.markdown("---")
@@ -239,16 +210,30 @@ if st.session_state.signals:
     st.header(f"📊 Active Signals ({len(st.session_state.signals)})")
     
     # Summary metrics
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4, col5 = st.columns(5)
     
     buy_signals = [s for s in st.session_state.signals if s.signal_type.value == 'BUY']
     sell_signals = [s for s in st.session_state.signals if s.signal_type.value == 'SELL']
     avg_strength = sum(s.strength for s in st.session_state.signals) / len(st.session_state.signals)
     
+    # Count signals by quality
+    high_prob_count = 0
+    strong_count = 0
+    valid_count = 0
+    for signal in st.session_state.signals:
+        if signal.reason and '[' in signal.reason:
+            if 'HIGH-PROB' in signal.reason:
+                high_prob_count += 1
+            elif 'STRONG' in signal.reason:
+                strong_count += 1
+            elif 'VALID' in signal.reason:
+                valid_count += 1
+    
     col1.metric("Total Signals", len(st.session_state.signals))
     col2.metric("BUY Signals", len(buy_signals), delta_color="normal")
     col3.metric("SELL Signals", len(sell_signals), delta_color="inverse")
     col4.metric("Avg Strength", f"{avg_strength:.1%}")
+    col5.metric("HIGH-PROB (5+)", high_prob_count, delta_color="normal")
     
     st.markdown("---")
     
@@ -262,7 +247,40 @@ if st.session_state.signals:
         col1, col2 = st.columns([3, 1])
         
         with col1:
-            st.markdown(f"### {signal.symbol} - {signal.signal_type.value}")
+            # Extract score from reason (format: "BUY [QUALITY SCORE/8]: ...")
+            score_text = ""
+            quality_text = ""
+            if signal.reason and '[' in signal.reason and ']' in signal.reason:
+                try:
+                    # Extract text between brackets: "[HIGH-PROB 5/8]"
+                    bracket_content = signal.reason.split('[')[1].split(']')[0]
+                    # Split into quality and score: "HIGH-PROB 5/8"
+                    parts = bracket_content.rsplit(' ', 1)
+                    if len(parts) == 2:
+                        quality_text = parts[0]  # "HIGH-PROB"
+                        score_text = parts[1]     # "5/8"
+                except:
+                    pass
+            
+            # Title with score badge
+            if score_text:
+                # Color code based on quality
+                if "HIGH-PROB" in quality_text:
+                    badge_color = "#28a745"  # Green
+                elif "STRONG" in quality_text:
+                    badge_color = "#ffc107"  # Yellow
+                else:
+                    badge_color = "#6c757d"  # Gray
+                
+                st.markdown(f"""
+                ### {signal.symbol} - {signal.signal_type.value} 
+                <span style="background-color: {badge_color}; color: white; padding: 4px 12px; border-radius: 12px; font-size: 14px; font-weight: bold; margin-left: 10px;">
+                    {quality_text} {score_text}
+                </span>
+                """, unsafe_allow_html=True)
+            else:
+                st.markdown(f"### {signal.symbol} - {signal.signal_type.value}")
+            
             st.markdown(f"**Price:** ₹{signal.price:.2f} | **Strength:** {signal.strength:.1%}")
             st.markdown(f"**Time:** {signal.timestamp}")
             
@@ -304,9 +322,24 @@ if st.session_state.signals:
     if st.button("📥 Download Signals as CSV"):
         df_data = []
         for signal in st.session_state.signals:
+            # Extract score from reason
+            score_text = ""
+            quality_text = ""
+            if signal.reason and '[' in signal.reason and ']' in signal.reason:
+                try:
+                    bracket_content = signal.reason.split('[')[1].split(']')[0]
+                    parts = bracket_content.rsplit(' ', 1)
+                    if len(parts) == 2:
+                        quality_text = parts[0]
+                        score_text = parts[1]
+                except:
+                    pass
+            
             df_data.append({
                 'Symbol': signal.symbol,
                 'Signal': signal.signal_type.value,
+                'Quality': quality_text if quality_text else 'N/A',
+                'Score': score_text if score_text else 'N/A',
                 'Price': signal.price,
                 'Strength': signal.strength,
                 'Stop Loss': signal.stop_loss,
@@ -406,38 +439,17 @@ if st.session_state.scan_mode == "WebSocket":
         time.sleep(2)  # Refresh UI every 2 seconds
         st.rerun()
 
-# Auto-refresh if HTTP auto-scan is enabled
-elif auto_scan:
-    # Check if enough time has passed since last scan
-    should_scan = False
-    
-    if st.session_state.last_scan_time is None:
-        should_scan = True
-    else:
-        time_since_scan = (datetime.now() - st.session_state.last_scan_time).total_seconds()
-        should_scan = time_since_scan >= 60  # 60 seconds interval
-    
-    if should_scan:
-        # Automatically trigger scan
-        with st.spinner("Auto-scanning all NIFTY 50 stocks..."):
-            signals = st.session_state.scanner.scan_all_symbols()
-            st.session_state.signals = signals
-            st.session_state.last_scan_time = datetime.now()
-            
-            # Send alerts if new signals found
-            if signals and len(signals) > st.session_state.previous_signal_count:
-                new_signals = signals[st.session_state.previous_signal_count:]
-                if len(new_signals) == 1:
-                    st.session_state.alert_manager.send_signal_alert(new_signals[0])
-                else:
-                    st.session_state.alert_manager.send_multiple_signals_alert(new_signals)
-            
-            st.session_state.previous_signal_count = len(signals)
-            
-            if signals:
-                st.toast(f"🔔 Found {len(signals)} signal(s)!", icon="🔍")
-    
-    # Refresh every 5 seconds to check if it's time to scan
-    import time
-    time.sleep(5)
-    st.rerun()
+# HTTP auto-scan logic REMOVED - WebSocket only now
+# Old HTTP polling auto-refresh code (commented out):
+# elif auto_scan:
+#     # Check if enough time has passed since last scan
+#     should_scan = False
+#     if st.session_state.last_scan_time is None:
+#         should_scan = True
+#     else:
+#         time_since_scan = (datetime.now() - st.session_state.last_scan_time).total_seconds()
+#         should_scan = time_since_scan >= 60  # 60 seconds interval
+#     if should_scan:
+#         # Automatically trigger scan
+#         ...
+# WebSocket mode handles everything automatically - no manual refresh needed
