@@ -100,7 +100,7 @@ class RealtimeDataStream:
                     last_price = tick.get('last_price', 0)
                     # KiteTicker provides 'volume_traded' not 'volume'
                     volume = tick.get('volume_traded', tick.get('volume', 0))
-                   # logger.info(f"TICK: {symbol} | Rs.{last_price:.2f} | Vol: {volume:,}")
+                    logger.info(f"TICK: {symbol} | Rs.{last_price:.2f} | Vol: {volume:,}")
                     
                     # Call registered callbacks
                     for callback in self.tick_callbacks:
