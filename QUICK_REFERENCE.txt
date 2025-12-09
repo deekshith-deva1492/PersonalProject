@@ -1,0 +1,174 @@
+═══════════════════════════════════════════════════════════
+                   NIFTY 50 TRADING BOT
+                    QUICK REFERENCE
+═══════════════════════════════════════════════════════════
+
+🇮🇳 MARKET CONFIGURATION
+───────────────────────────────────────────────────────────
+Exchange:       NSE (National Stock Exchange, India)
+Stocks:         All 50 NIFTY stocks
+Trading Hours:  9:15 AM - 3:30 PM IST
+Timezone:       Asia/Kolkata
+Broker:         Zerodha (Kite Connect API)
+Product:        MIS (Intraday with margin)
+
+💰 RISK MANAGEMENT
+───────────────────────────────────────────────────────────
+Risk per trade:     1% of capital
+Max positions:      5 simultaneously
+Max daily loss:     3% of capital
+Stop loss:          0.3% per trade
+Take profit:        0.7% or VWAP return
+Risk-reward ratio:  1:2 minimum
+
+🎯 STRATEGY (ULTRA-SIMPLE)
+───────────────────────────────────────────────────────────
+ENTRY CONDITIONS (ALL must be true):
+  1. ☑ Trend check    → Price vs 50 EMA
+  2. ☑ RSI extreme    → <30 (dip) or >70 (spike)
+  3. ☑ VWAP touch     → At VWAP band (±0.2%)
+  4. ☑ Reversal candle → Bullish (up) / Bearish (down)
+
+EXIT CONDITIONS:
+  ✓ Take profit → 0.7% gain OR VWAP return
+  ✗ Stop loss   → 0.3% loss (tight control)
+
+📊 POSITION SIZING (Example on ₹1,00,000)
+───────────────────────────────────────────────────────────
+Capital:        ₹1,00,000
+Risk (1%):      ₹1,000 per trade
+Stock:          RELIANCE @ ₹2,500
+Stop (0.3%):    ₹7.50 per share
+Shares:         133 (₹1,000 ÷ ₹7.50)
+Position value: ₹3,32,500
+Margin (MIS):   ₹66,500 (20% of value)
+
+📋 SETUP CHECKLIST
+───────────────────────────────────────────────────────────
+☐ Install kiteconnect
+    → pip install kiteconnect
+
+☐ Create Zerodha Kite app
+    → https://developers.kite.trade/
+
+☐ Get API credentials
+    → API Key
+    → API Secret
+
+☐ Create .env file
+    → Copy .env.example to .env
+    → Add your credentials
+
+☐ Generate access token
+    → python zerodha_login.py
+    → Save token (expires daily!)
+
+☐ Test paper trading
+    → python main.py --mode paper
+
+☐ View dashboard
+    → streamlit run dashboard/app.py
+
+☐ Read complete guide
+    → notepad ZERODHA_SETUP.md
+
+🚀 QUICK COMMANDS
+───────────────────────────────────────────────────────────
+Install:        .\install_zerodha.ps1
+Login:          python zerodha_login.py
+Paper trade:    python main.py --mode paper
+Live trade:     python main.py --mode live
+Dashboard:      streamlit run dashboard/app.py
+Test:           python test_functionality.py
+
+📁 KEY FILES
+───────────────────────────────────────────────────────────
+config.yaml                → Main configuration
+.env                       → API credentials (SECRET!)
+src/brokers/zerodha_broker.py → Zerodha integration
+zerodha_login.py           → Token generator
+ZERODHA_SETUP.md           → Complete setup guide ⭐
+ULTRA_SIMPLE_STRATEGY.md   → Strategy explanation
+UPDATE_SUMMARY.md          → What changed
+
+🇮🇳 NIFTY 50 STOCKS
+───────────────────────────────────────────────────────────
+Banking (15):
+  HDFCBANK, ICICIBANK, KOTAKBANK, AXISBANK, SBIN,
+  INDUSINDBK, BAJFINANCE, BAJAJFINSV, SBILIFE, HDFCLIFE
+
+IT (5):
+  TCS, INFY, WIPRO, HCLTECH, TECHM
+
+Consumer (8):
+  HINDUNILVR, ITC, NESTLEIND, BRITANNIA, TATACONSUM,
+  TITAN, MARUTI, EICHERMOT
+
+Energy (9):
+  RELIANCE, ONGC, NTPC, POWERGRID, COALINDIA,
+  BPCL, ADANIENT, ADANIPORTS, UPL
+
+Industrials (7):
+  LT, TATAMOTORS, TATASTEEL, M&M, BAJAJ-AUTO,
+  JSWSTEEL, GRASIM
+
+Healthcare (5):
+  SUNPHARMA, DRREDDY, DIVISLAB, CIPLA, APOLLOHOSP
+
+Telecom (1):
+  BHARTIARTL
+
+Others (5):
+  ASIANPAINT, ULTRACEMCO, SHREECEM, HINDALCO, HEROMOTOCO
+
+⚠️ IMPORTANT NOTES
+───────────────────────────────────────────────────────────
+• Access token expires DAILY at 6:00 AM IST
+• MIS positions auto-square-off at 3:20 PM
+• Use paper trading mode first!
+• Never commit .env to GitHub
+• Keep API keys secret
+• Monitor first few weeks closely
+
+💡 TRADING TIPS
+───────────────────────────────────────────────────────────
+✓ Trade during active hours (9:45-11:30 AM, 2-3:30 PM)
+✓ Let bot find perfect setups (be patient)
+✓ Trust the tight stops (0.3% protects capital)
+✓ Small wins compound over time
+✓ Avoid first/last 15 minutes (volatile)
+
+✗ Don't trade without trend
+✗ Don't override risk management
+✗ Don't force trades in choppy markets
+✗ Don't start with large capital
+
+📞 SUPPORT
+───────────────────────────────────────────────────────────
+Zerodha Support: https://support.zerodha.com/
+Kite API Docs:   https://kite.trade/docs/connect/v3/
+Kite Forum:      https://kite.trade/forum/
+
+💰 ZERODHA FEES (Approximate)
+───────────────────────────────────────────────────────────
+Brokerage:       ₹20 or 0.03% per trade (whichever lower)
+STT:             0.025% on sell side
+Transaction:     ~0.00325%
+GST:             18% on brokerage
+
+Example:         Buy/Sell ₹3,30,000 worth
+Total charges:   ~₹150-200
+
+═══════════════════════════════════════════════════════════
+                    READY TO START!
+═══════════════════════════════════════════════════════════
+
+1. Read ZERODHA_SETUP.md (complete guide)
+2. Run install_zerodha.ps1 (install dependencies)
+3. Get API credentials from Zerodha
+4. Run zerodha_login.py (generate token)
+5. Test with python main.py --mode paper
+
+Happy Trading! 🇮🇳📈🚀
+
+═══════════════════════════════════════════════════════════

@@ -1,0 +1,247 @@
+{
+  "ADANIENT.NS": {
+    "token": 6401,
+    "name": "ADANI ENTERPRISES",
+    "exchange": "NSE"
+  },
+  "APOLLOHOSP.NS": {
+    "token": 40193,
+    "name": "APOLLO HOSPITALS ENTER. L",
+    "exchange": "NSE"
+  },
+  "ASIANPAINT.NS": {
+    "token": 60417,
+    "name": "ASIAN PAINTS",
+    "exchange": "NSE"
+  },
+  "BAJFINANCE.NS": {
+    "token": 81153,
+    "name": "BAJAJ FINANCE",
+    "exchange": "NSE"
+  },
+  "HDFCLIFE.NS": {
+    "token": 119553,
+    "name": "HDFC LIFE INS CO",
+    "exchange": "NSE"
+  },
+  "BPCL.NS": {
+    "token": 134657,
+    "name": "BHARAT PETROLEUM CORP  LT",
+    "exchange": "NSE"
+  },
+  "BRITANNIA.NS": {
+    "token": 140033,
+    "name": "BRITANNIA INDUSTRIES",
+    "exchange": "NSE"
+  },
+  "CIPLA.NS": {
+    "token": 177665,
+    "name": "CIPLA",
+    "exchange": "NSE"
+  },
+  "DRREDDY.NS": {
+    "token": 225537,
+    "name": "DR. REDDY S LABORATORIES",
+    "exchange": "NSE"
+  },
+  "EICHERMOT.NS": {
+    "token": 232961,
+    "name": "EICHER MOTORS",
+    "exchange": "NSE"
+  },
+  "GRASIM.NS": {
+    "token": 315393,
+    "name": "GRASIM INDUSTRIES",
+    "exchange": "NSE"
+  },
+  "HDFCBANK.NS": {
+    "token": 341249,
+    "name": "HDFC BANK",
+    "exchange": "NSE"
+  },
+  "HEROMOTOCO.NS": {
+    "token": 345089,
+    "name": "HERO MOTOCORP",
+    "exchange": "NSE"
+  },
+  "HINDALCO.NS": {
+    "token": 348929,
+    "name": "HINDALCO  INDUSTRIES ",
+    "exchange": "NSE"
+  },
+  "HINDUNILVR.NS": {
+    "token": 356865,
+    "name": "HINDUSTAN UNILEVER",
+    "exchange": "NSE"
+  },
+  "INFY.NS": {
+    "token": 408065,
+    "name": "INFOSYS",
+    "exchange": "NSE"
+  },
+  "ITC.NS": {
+    "token": 424961,
+    "name": "ITC",
+    "exchange": "NSE"
+  },
+  "KOTAKBANK.NS": {
+    "token": 492033,
+    "name": "KOTAK MAHINDRA BANK",
+    "exchange": "NSE"
+  },
+  "M&M.NS": {
+    "token": 519937,
+    "name": "MAHINDRA & MAHINDRA",
+    "exchange": "NSE"
+  },
+  "ONGC.NS": {
+    "token": 633601,
+    "name": "OIL AND NATURAL GAS CORP.",
+    "exchange": "NSE"
+  },
+  "RELIANCE.NS": {
+    "token": 738561,
+    "name": "RELIANCE INDUSTRIES",
+    "exchange": "NSE"
+  },
+  "SBIN.NS": {
+    "token": 779521,
+    "name": "STATE BANK OF INDIA",
+    "exchange": "NSE"
+  },
+  "SHREECEM.NS": {
+    "token": 794369,
+    "name": "SHREE CEMENT",
+    "exchange": "NSE"
+  },
+  "SUNPHARMA.NS": {
+    "token": 857857,
+    "name": "SUN PHARMACEUTICAL IND L",
+    "exchange": "NSE"
+  },
+  "TATACONSUM.NS": {
+    "token": 878593,
+    "name": "TATA CONSUMER PRODUCT",
+    "exchange": "NSE"
+  },
+  "TATASTEEL.NS": {
+    "token": 895745,
+    "name": "TATA STEEL",
+    "exchange": "NSE"
+  },
+  "TITAN.NS": {
+    "token": 897537,
+    "name": "TITAN COMPANY",
+    "exchange": "NSE"
+  },
+  "WIPRO.NS": {
+    "token": 969473,
+    "name": "WIPRO",
+    "exchange": "NSE"
+  },
+  "ICICIBANK.NS": {
+    "token": 1270529,
+    "name": "ICICI BANK",
+    "exchange": "NSE"
+  },
+  "INDUSINDBK.NS": {
+    "token": 1346049,
+    "name": "INDUSIND BANK",
+    "exchange": "NSE"
+  },
+  "AXISBANK.NS": {
+    "token": 1510401,
+    "name": "AXIS BANK",
+    "exchange": "NSE"
+  },
+  "HCLTECH.NS": {
+    "token": 1850625,
+    "name": "HCL TECHNOLOGIES",
+    "exchange": "NSE"
+  },
+  "BHARTIARTL.NS": {
+    "token": 2714625,
+    "name": "BHARTI AIRTEL",
+    "exchange": "NSE"
+  },
+  "DIVISLAB.NS": {
+    "token": 2800641,
+    "name": "DIVI S LABORATORIES",
+    "exchange": "NSE"
+  },
+  "MARUTI.NS": {
+    "token": 2815745,
+    "name": "MARUTI SUZUKI INDIA",
+    "exchange": "NSE"
+  },
+  "UPL.NS": {
+    "token": 2889473,
+    "name": "UPL",
+    "exchange": "NSE"
+  },
+  "LT.NS": {
+    "token": 2939649,
+    "name": "LARSEN & TOUBRO",
+    "exchange": "NSE"
+  },
+  "ULTRACEMCO.NS": {
+    "token": 2952193,
+    "name": "ULTRATECH CEMENT",
+    "exchange": "NSE"
+  },
+  "TCS.NS": {
+    "token": 2953217,
+    "name": "TATA CONSULTANCY SERV LT",
+    "exchange": "NSE"
+  },
+  "NTPC.NS": {
+    "token": 2977281,
+    "name": "NTPC",
+    "exchange": "NSE"
+  },
+  "JSWSTEEL.NS": {
+    "token": 3001089,
+    "name": "JSW STEEL",
+    "exchange": "NSE"
+  },
+  "TECHM.NS": {
+    "token": 3465729,
+    "name": "TECH MAHINDRA",
+    "exchange": "NSE"
+  },
+  "POWERGRID.NS": {
+    "token": 3834113,
+    "name": "POWER GRID CORP.",
+    "exchange": "NSE"
+  },
+  "ADANIPORTS.NS": {
+    "token": 3861249,
+    "name": "ADANI PORT & SEZ",
+    "exchange": "NSE"
+  },
+  "BAJAJ-AUTO.NS": {
+    "token": 4267265,
+    "name": "BAJAJ AUTO",
+    "exchange": "NSE"
+  },
+  "BAJAJFINSV.NS": {
+    "token": 4268801,
+    "name": "BAJAJ FINSERV",
+    "exchange": "NSE"
+  },
+  "NESTLEIND.NS": {
+    "token": 4598529,
+    "name": "NESTLE INDIA",
+    "exchange": "NSE"
+  },
+  "COALINDIA.NS": {
+    "token": 5215745,
+    "name": "COAL INDIA",
+    "exchange": "NSE"
+  },
+  "SBILIFE.NS": {
+    "token": 5582849,
+    "name": "SBI LIFE INSURANCE CO",
+    "exchange": "NSE"
+  }
+}

@@ -1,0 +1,138 @@
+# Trading Bot Configuration
+
+# Trading Settings
+trading:
+  mode: "paper"  # paper or live
+  
+  # NIFTY 50 Stocks - India's top 50 companies
+  symbols:
+    - "RELIANCE.NS"
+    - "TCS.NS"
+    - "HDFCBANK.NS"
+    - "INFY.NS"
+    - "ICICIBANK.NS"
+    - "HINDUNILVR.NS"
+    - "ITC.NS"
+    - "SBIN.NS"
+    - "BHARTIARTL.NS"
+    - "KOTAKBANK.NS"
+    - "LT.NS"
+    - "AXISBANK.NS"
+    - "ASIANPAINT.NS"
+    - "MARUTI.NS"
+    - "HCLTECH.NS"
+    - "BAJFINANCE.NS"
+    - "TITAN.NS"
+    - "SUNPHARMA.NS"
+    - "ULTRACEMCO.NS"
+    - "NESTLEIND.NS"
+    - "WIPRO.NS"
+    - "ONGC.NS"
+    - "NTPC.NS"
+    - "POWERGRID.NS"
+    - "TECHM.NS"
+    - "M&M.NS"
+    - "TATAMOTORS.NS"
+    - "TATASTEEL.NS"
+    - "INDUSINDBK.NS"
+    - "BAJAJFINSV.NS"
+    - "ADANIENT.NS"
+    - "COALINDIA.NS"
+    - "DRREDDY.NS"
+    - "GRASIM.NS"
+    - "HINDALCO.NS"
+    - "DIVISLAB.NS"
+    - "CIPLA.NS"
+    - "EICHERMOT.NS"
+    - "SHREECEM.NS"
+    - "APOLLOHOSP.NS"
+    - "BPCL.NS"
+    - "JSWSTEEL.NS"
+    - "HEROMOTOCO.NS"
+    - "BRITANNIA.NS"
+    - "TATACONSUM.NS"
+    - "SBILIFE.NS"
+    - "ADANIPORTS.NS"
+    - "UPL.NS"
+    - "BAJAJ-AUTO.NS"
+    - "HDFCLIFE.NS"
+  
+  # Trading hours (Indian Standard Time)
+  market_open: "09:15"
+  market_close: "15:30"
+  timezone: "Asia/Kolkata"
+
+# Data Settings
+data:
+  provider: "zerodha"  # Using Zerodha Kite API
+  interval: "5minute"  # minute, 3minute, 5minute, 15minute, 30minute, 60minute, day
+  lookback_days: 5
+  
+# Strategy Settings - ULTRA SIMPLE
+strategy:
+  name: "trend_following_dip_spike"
+  
+  # Technical Indicator Parameters (Simplified)
+  indicators:
+    rsi_period: 14
+    rsi_oversold: 30     # Dip signal
+    rsi_overbought: 70   # Spike signal
+    
+    ma_short: 20         # Not used in ultra-simple version
+    ma_long: 50          # Used as trend filter (50 EMA)
+    
+    # MACD and BB not used in ultra-simple strategy
+    macd_fast: 12
+    macd_slow: 26
+    macd_signal: 9
+    bb_period: 20
+    bb_std: 2
+    
+  # Entry/Exit Parameters (ULTRA SIMPLE)
+  entry:
+    min_volume: 100000  # Minimum daily volume
+    
+  exit:
+    profit_target: 0.007   # 0.7% profit target (or when price returns to VWAP)
+    stop_loss: 0.003       # 0.3% stop loss (tight and safe)
+    trailing_stop: false   # Keep it simple - no trailing stop
+
+# Risk Management - 1% per trade
+risk:
+  max_portfolio_risk: 0.01   # Risk 1% of capital per trade
+  max_position_size: 0.33    # Max 5% of portfolio per position (conservative)
+  max_open_positions: 3      # Max 3 positions simultaneously (avoid too many small trades)
+  min_risk_reward_ratio: 2.0 # 0.3% loss vs 0.6%+ gain = 2:1 ratio
+  
+  # Account Settings (in Indian Rupees ₹)
+  initial_capital: 100000    # ₹1,00,000 starting capital
+  max_daily_loss: 0.03       # Stop trading if 3% daily loss
+
+# Backtesting Settings
+backtest:
+  start_date: "2024-01-01"
+  end_date: "2024-12-31"
+  commission: 0.001  # 0.1% commission per trade
+  slippage: 0.0005  # 0.05% slippage
+
+# API Credentials (use environment variables for security)
+api:
+  # Alpaca (for US stocks)
+  alpaca_key: ${ALPACA_API_KEY}
+  alpaca_secret: ${ALPACA_SECRET_KEY}
+  alpaca_base_url: "https://paper-api.alpaca.markets"  # paper or live
+  
+  # Other providers as needed
+  # binance_key: ${BINANCE_API_KEY}
+  # binance_secret: ${BINANCE_SECRET_KEY}
+
+# Logging
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR, CRITICAL
+  file: "logs/trading_bot.log"
+  console: true
+
+# Dashboard
+dashboard:
+  refresh_interval: 5  # seconds
+  port: 8501
